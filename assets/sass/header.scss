@@ -1,0 +1,126 @@
+#header {
+    position: relative;
+    width: 100%;
+    height: 161px;
+    flex-direction: column;
+    #logo {
+        width: 243px;
+        height: 243px;
+        align-self: center;
+    }
+    .btn-menu {
+        width: 42px;
+        height: 30px;
+        align-self: flex-end;
+        position: absolute;
+        margin: 27px 10px 0;
+        cursor: pointer;
+    }
+    #menu {
+        transition: right .5s ease-in-out;
+        width: 300px;
+        height: 100vh;
+        padding-bottom: 50px;
+        background-color: var(--gray-7);
+        position: fixed;
+        right: -320px;
+        top: 0;
+        z-index: 6;
+        flex-direction: column;
+        justify-content: space-between;
+        nav {
+            display: flex;
+            ul {
+                flex-direction: column;
+                li {
+                    a {
+                        color: var(--black);
+                        text-decoration: none;
+                        font-size: 25px;
+                    }
+                }
+            }
+            button {
+                border-radius: 10px;
+                top: 70px;
+                background-color: var(--black);
+                border: none;
+                width: 177px;
+                height: 43px;
+                text-align: center;
+                position: relative;
+                margin: 0;
+                padding: 0;
+                a {
+                    color: var(--white);
+                    text-decoration: none;
+                    margin: 0 55px;
+                    align-self: center;
+                    font-size: 20px;
+                }
+            }
+        }
+        
+    }
+    .btn-close {
+        display: none;
+    }
+    &.open-menu {
+        #overlay {
+            display: flex;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: var(--black);
+            opacity: 50%;
+            flex-direction: column;
+            z-index: 4;
+        }
+        #logo {
+            position: absolute;
+            transition: all 1s ease-in-out; 
+            left: calc(100px - 35px);
+            z-index: 5;
+        }
+        #menu {
+            display: flex;
+            top: 0;
+            right: -90px;
+            background-color: var(--white);
+            z-index: 4;
+            height: 100vh;
+            width: 110%;
+            flex-direction: column;
+            nav {
+                position: relative;
+                align-items: flex-start;
+                top: 200px;
+                ul {
+                    width: 75%;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }.btn-close {
+            display: flex;
+            width: 42px;
+            height: 30px;
+            align-self: center;
+            position: absolute;
+            margin: 27px 10px 0;
+            cursor: pointer;
+            z-index: 6; 
+        }
+    }
+    #btn-open, #btn-close {
+        position: absolute;
+        right: 0;
+    }
+}

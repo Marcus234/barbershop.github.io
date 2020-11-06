@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
-    <link rel="manifest" href="assets/icons/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -27,7 +27,59 @@
 </head>
 <body>
     
-    
+    <header id="header">
 
+        <div id="overlay"></div>
+
+        <img src="assets/logo/barbershop.png" id="logo" alt="Logo">
+
+        <img src="assets/imagens/open-menu.svg" width="42" height="42" alt="Botão menu" class="btn-menu" id="btn-menu" />
+
+        <div id="menu" class="close-menu">
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SERVIÇOS</a></li>
+                    <li><a href="#">QUEM SOMOS</a></li>
+                    <li><a href="#">CONTATO</a></li>
+    
+                    <button><a href="#">LOGIN</a></button>
+
+                </ul>
+
+                <div>
+
+                    
+
+                </div>
+
+            </nav>
+
+            
+        </div>
+        
+        <img src="assets/imagens/close-menu.svg" width="42" height="42" alt="Botão menu" class="btn-close" id="btn-close" />
+
+    </header>
+
+
+
+    <script>
+        const btnOpen = document.querySelector('#btn-menu');
+          btnOpen.addEventListener('click', e=> {
+            const header = document.querySelector('#header');
+            header.classList.toggle('open-menu');
+          }
+        );
+        const btnClose = document.querySelector('#btn-close');
+          btnClose.addEventListener('click', e=> {
+            const header = document.querySelector('#header');
+            header.classList.toggle('open-menu');
+          }
+        );
+      </script>
 </body>
 </html>
