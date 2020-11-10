@@ -35,7 +35,7 @@
 
         <img src="assets/imagens/open-menu.svg" width="42" height="42" alt="Botão menu" class="btn-menu" id="btn-menu" />
 
-        <div id="menu" class="close-menu">
+        <div id="menu" class="menu">
 
             <nav>
 
@@ -43,10 +43,33 @@
 
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">SERVIÇOS</a></li>
-                    <li><a href="#">QUEM SOMOS</a></li>
+                    <li class="quem"><a href="#">QUEM SOMOS</a></li>
                     <li><a href="#">CONTATO</a></li>
+
+                    <li class="divider"><hr /></li>
     
                     <button><a href="#">LOGIN</a></button>
+
+                    <div class="perfil">
+
+                      <img src="assets/imagens/login.png" alt="Foto de Perfil">
+
+                      <div class="usuário">
+
+                        <h2>Marcus Ribeiro</h2>
+                        <small>marcusvribeiro23@hotmail.com</small>
+
+                      </div>
+
+                    </div>
+
+                    <div class="deslogar">
+
+                      <img src="assets/imagens/right-arrow.svg" alt="">
+
+                      <p>Sair</p>
+                      
+                    </div>
 
                 </ul>
 
@@ -65,7 +88,63 @@
 
     </header>
 
+    <main></main>
 
+    <footer id="footer">
+
+      <nav>
+
+        <ul>LINKS
+
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">SERVIÇOS</a></li>
+          <li><a href="#">QUEM SOMOS</a></li>
+          <li><a href="#">CONTATO</a></li>
+          <li><a href="#">LOGIN</a></li>
+
+        </ul>
+
+      </nav>
+
+      <div id="socials">
+
+        <div class="facebook">
+
+          <img src="assets/imagens/facebook.svg" alt="Facebook">
+
+          <p>BarberShop</p>
+
+        </div>
+
+        <div class="instagram">
+
+          <img src="assets/imagens/instagram.svg" alt="Instagram">
+
+          <p>@barbershop</p>
+
+        </div>
+
+        <div class="whatsapp">
+
+          <img src="assets/imagens/whatsapp.svg" alt="WhatsApp">
+
+          <p>(11) 99999-0000</p>
+
+        </div>
+
+      </div>
+
+      <div id="logo-footer">
+
+        <img src="assets/logo/barbershop-footer.png" alt="Logo footer">
+
+      </div>
+
+      <hr>
+
+      <p>© Copyright HcodeLab</p>
+
+    </footer>
 
     <script>
         const btnOpen = document.querySelector('#btn-menu');

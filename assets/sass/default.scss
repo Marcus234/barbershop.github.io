@@ -13,3 +13,9 @@ body, div, article, aside, footer, header, main, nav, section, ul, ol, li, butto
 body {
     margin: 0;
 }
+
+@media (min-width: 1200px) {
+    body {
+        background-color: var(--gray-1);
+    }
+}
