@@ -13,6 +13,7 @@ body, div, article, aside, footer, header, main, nav, section, ul, ol, li, butto
 
 body {
   margin: 0;
+  flex-direction: column;
 }
 
 @media (min-width: 1200px) {
@@ -262,12 +263,13 @@ body {
   #header #logo {
     position: relative;
     top: -50px;
+    margin-left: 20px;
   }
   #header #menu {
     width: 100%;
-    top: -220px;
-    position: relative;
+    top: 20px;
     left: -70px;
+    position: absolute;
   }
   #header #menu nav ul {
     position: relative;
@@ -287,7 +289,7 @@ body {
     height: 43px;
   }
   #header #menu.logged {
-    top: -250px;
+    top: 0;
     left: -160px;
   }
   #header #menu.logged nav .divider {
@@ -315,11 +317,8 @@ body {
     width: 385px;
     height: 385px;
   }
-  #header #menu {
-    top: -370px;
-  }
   #header #menu nav ul {
-    left: 490px;
+    left: 450px;
   }
   #header #menu nav ul li a {
     font-size: 35px;
@@ -332,13 +331,7 @@ body {
     font-size: 35px;
   }
   #header #menu.logged {
-    top: -390px;
-  }
-  #header #menu.logged nav {
-    position: relative;
-  }
-  #header #menu.logged nav ul .quem {
-    margin-right: -5px;
+    top: 0;
   }
 }
 #footer {
@@ -386,7 +379,7 @@ body {
   position: relative;
   top: -60px;
   background-color: var(--white);
-  width: 300px;
+  width: 90%;
 }
 #footer p {
   position: relative;
@@ -394,6 +387,73 @@ body {
   color: var(--white);
 }
 
+@media (min-width: 768px) {
+  #footer nav {
+    position: absolute;
+    display: flex;
+    align-self: flex-start;
+  }
+  #footer nav ul {
+    font-weight: bold;
+    display: inline;
+    color: var(--white);
+    align-self: flex-start;
+    font-size: 25px;
+  }
+  #footer nav ul li a {
+    font-size: 20px;
+    color: var(--white);
+    text-decoration: none;
+  }
+  #footer #socials {
+    align-self: center;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 20px;
+  }
+  #footer #socials .facebook, #footer #socials .instagram, #footer #socials .whatsapp {
+    height: 58px;
+    top: 90px;
+    margin-top: 10px;
+  }
+  #footer #socials p {
+    top: 0;
+    display: flex;
+  }
+  #footer #logo-footer {
+    align-self: flex-end;
+  }
+  #footer hr {
+    width: 80%;
+    top: -40px;
+  }
+}
+@media (min-width: 1200px) {
+  #footer {
+    position: relative;
+    margin-top: 1900px;
+  }
+  #footer nav ul {
+    margin-left: 30px;
+    font-size: 30px;
+  }
+  #footer #logo-footer {
+    right: 50px;
+  }
+  #footer hr {
+    width: 90%;
+  }
+}
+@media (min-width: 1920px) {
+  #footer nav ul {
+    margin-left: 60px;
+  }
+  #footer #logo-footer {
+    right: 80px;
+  }
+}
 :root {
   --white: #FFF;
   --black: #000;
@@ -401,10 +461,69 @@ body {
 }
 
 #main {
-  height: 200px;
-  align-self: center;
-  top: -160px;
-  bottom: 0;
+  flex-direction: column;
+}
+#main img {
+  width: 100%;
+}
+#main .title {
+  margin-left: 10px;
+  z-index: 1;
+  position: absolute;
+  display: inline;
+  margin-top: 20px;
+}
+#main .title h1 {
+  font-weight: bold;
+  color: var(--white);
+  margin: 0;
+}
+#main .title small {
+  color: var(--white);
+}
+
+@media (min-width: 768px) {
+  #main .title {
+    margin-left: 20px;
+  }
+  #main .title h1 {
+    font-size: 50px;
+  }
+  #main .title small {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  #main {
+    height: 2000px;
+    align-self: center;
+    top: 0;
+    bottom: 0;
+    margin-top: 133px;
+  }
+  #main img {
+    position: relative;
+    top: 0;
+    height: 650px;
+  }
+  #main .title {
+    top: 90px;
+    margin-left: 20px;
+  }
+  #main .title h1 {
+    font-size: 70px;
+  }
+  #main .title small {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1920px) {
+  #main img {
+    height: 850px;
+  }
+  #main .title {
+    margin-left: 30px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

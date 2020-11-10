@@ -270,12 +270,13 @@
         #logo {
             position: relative;
             top: -50px;
+            margin-left: 20px;
         }
         #menu {
             width: 100%;
-            top: -220px;
-            position: relative;
+            top: 20px;
             left: -70px;
+            position: absolute;
             nav {
                 ul {
                     position: relative;
@@ -296,7 +297,7 @@
                 }
             }
             &.logged {
-                top: -250px;
+                top: 0;
                 left: -160px;
                 nav {
                     .divider {
@@ -330,10 +331,9 @@
             height: 385px;
         }
         #menu {
-            top: -370px;
             nav {
                 ul {
-                    left: 490px;
+                    left: 450px;
                     li {
                         a {
                             font-size: 35px;
@@ -349,14 +349,8 @@
                 }
             }
             &.logged {
-                top: -390px;
+                top: 0;
                 nav {
-                    position: relative;
-                    ul {
-                        .quem {
-                            margin-right: -5px;
-                        }
-                    }
                 }
             }
         }
