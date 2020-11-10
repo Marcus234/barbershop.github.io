@@ -18,4 +18,11 @@ body {
     body {
         background-color: var(--gray-1);
     }
+    #main {
+        background-color: var(--white);
+        align-self: center;
+        position: absolute;
+        margin: auto 65px;
+        width: 90%;
+    }
 }

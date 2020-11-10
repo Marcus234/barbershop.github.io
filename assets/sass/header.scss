@@ -272,9 +272,10 @@
             top: -50px;
         }
         #menu {
-            top: -230px;
+            width: 100%;
+            top: -220px;
             position: relative;
-            left: 410px;
+            left: -70px;
             nav {
                 ul {
                     position: relative;
@@ -287,9 +288,6 @@
                             font-size: 25px;
                         }
                     }
-                    .quem {
-                        margin-right: -45px;
-                    }
                 }
                 button {
                     top: 0;
@@ -298,12 +296,9 @@
                 }
             }
             &.logged {
+                top: -250px;
+                left: -160px;
                 nav {
-                    ul {
-                        .quem {
-                            margin-right: 0;
-                        }
-                    }
                     .divider {
                         display: flex;
                         height: 80px;
@@ -335,17 +330,14 @@
             height: 385px;
         }
         #menu {
-            top: -390px;
-            margin-left: 200px;
+            top: -370px;
             nav {
                 ul {
+                    left: 490px;
                     li {
                         a {
                             font-size: 35px;
                         }
-                    }
-                    .quem {
-                        margin-right: -60px;
                     }
                 }
                 button {
@@ -357,9 +349,9 @@
                 }
             }
             &.logged {
+                top: -390px;
                 nav {
                     position: relative;
-                    left: 200px;
                     ul {
                         .quem {
                             margin-right: -5px;

@@ -19,6 +19,14 @@ body {
   body {
     background-color: var(--gray-1);
   }
+
+  #main {
+    background-color: var(--white);
+    align-self: center;
+    position: absolute;
+    margin: auto 65px;
+    width: 90%;
+  }
 }
 #header {
   position: relative;
@@ -256,9 +264,10 @@ body {
     top: -50px;
   }
   #header #menu {
-    top: -230px;
+    width: 100%;
+    top: -220px;
     position: relative;
-    left: 410px;
+    left: -70px;
   }
   #header #menu nav ul {
     position: relative;
@@ -272,16 +281,14 @@ body {
   #header #menu nav ul li a {
     font-size: 25px;
   }
-  #header #menu nav ul .quem {
-    margin-right: -45px;
-  }
   #header #menu nav button {
     top: 0;
     width: 177px;
     height: 43px;
   }
-  #header #menu.logged nav ul .quem {
-    margin-right: 0;
+  #header #menu.logged {
+    top: -250px;
+    left: -160px;
   }
   #header #menu.logged nav .divider {
     display: flex;
@@ -309,14 +316,13 @@ body {
     height: 385px;
   }
   #header #menu {
-    top: -390px;
-    margin-left: 200px;
+    top: -370px;
+  }
+  #header #menu nav ul {
+    left: 490px;
   }
   #header #menu nav ul li a {
     font-size: 35px;
-  }
-  #header #menu nav ul .quem {
-    margin-right: -60px;
   }
   #header #menu nav button {
     width: 277px;
@@ -325,9 +331,11 @@ body {
   #header #menu nav button a {
     font-size: 35px;
   }
+  #header #menu.logged {
+    top: -390px;
+  }
   #header #menu.logged nav {
     position: relative;
-    left: 200px;
   }
   #header #menu.logged nav ul .quem {
     margin-right: -5px;
@@ -390,6 +398,13 @@ body {
   --white: #FFF;
   --black: #000;
   --gray-1: #DFE4EA;
+}
+
+#main {
+  height: 200px;
+  align-self: center;
+  top: -160px;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
