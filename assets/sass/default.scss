@@ -13,8 +13,36 @@ body, div, article, aside, footer, header, main, nav, section, ul, ol, li, butto
 body {
     margin: 0;
     flex-direction: column;
+    button {
+        border-radius: 10px;
+        top: 70px;
+        background-color: var(--black);
+        border: none;
+        text-align: center;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        align-self: center;
+        a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 auto;
+            align-self: center;
+            font-size: 20px;
+        }
+    }
 }
-
+@media (min-width: 768px) {
+    body {
+        button {
+            width: 277px;
+            height: 63px;
+            a {
+                font-size: 30px;
+            }
+        }
+    }
+}
 @media (min-width: 1200px) {
     body {
         background-color: var(--gray-1);
@@ -25,5 +53,21 @@ body {
         position: absolute;
         margin: auto 65px;
         width: 90%;
+    }
+    button {
+        top: 0;
+        width: 177px;
+        height: 43px;
+    }
+}
+@media (min-width: 1920px) {
+    body {
+        button {
+            width: 277px;
+            height: 53px;
+            a {
+                font-size: 35px;
+            }
+        }
     }
 }
