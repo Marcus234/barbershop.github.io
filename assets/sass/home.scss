@@ -102,6 +102,24 @@
         }
     }
 }
+@media (min-width: 375px) {
+    #main {
+        section {
+            .home-services, .home-local, .home-contact {
+                height: 145px;
+                img {
+                    width: 163px;
+                    height: 122px;
+                }
+                .descrição {
+                    button {
+                        left: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
 @media (min-width: 768px) {
     #main {
         .title {
@@ -124,6 +142,25 @@
                 p {
                     top: 80px;
                     font-size: 20px;
+                }
+            }
+            .home-services, .home-local, .home-contact {
+                height: 185px;
+                img {
+                    width: 200px;
+                    height: 162px;
+                }
+                .descrição {
+                    h2 {
+                        font-size: 30px;
+                    }
+                    p {
+                        font-size: 20px;
+                        top: 70px;
+                    }
+                    button {
+                        left: 120px;
+                    }
                 }
             }
         }

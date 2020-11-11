@@ -609,6 +609,18 @@ body button a {
   left: 10px;
 }
 
+@media (min-width: 375px) {
+  #main section .home-services, #main section .home-local, #main section .home-contact {
+    height: 145px;
+  }
+  #main section .home-services img, #main section .home-local img, #main section .home-contact img {
+    width: 163px;
+    height: 122px;
+  }
+  #main section .home-services .descrição button, #main section .home-local .descrição button, #main section .home-contact .descrição button {
+    left: 120px;
+  }
+}
 @media (min-width: 768px) {
   #main .title {
     margin-left: 20px;
@@ -628,6 +640,23 @@ body button a {
   #main section .text p {
     top: 80px;
     font-size: 20px;
+  }
+  #main section .home-services, #main section .home-local, #main section .home-contact {
+    height: 185px;
+  }
+  #main section .home-services img, #main section .home-local img, #main section .home-contact img {
+    width: 200px;
+    height: 162px;
+  }
+  #main section .home-services .descrição h2, #main section .home-local .descrição h2, #main section .home-contact .descrição h2 {
+    font-size: 30px;
+  }
+  #main section .home-services .descrição p, #main section .home-local .descrição p, #main section .home-contact .descrição p {
+    font-size: 20px;
+    top: 70px;
+  }
+  #main section .home-services .descrição button, #main section .home-local .descrição button, #main section .home-contact .descrição button {
+    left: 120px;
   }
 }
 @media (min-width: 1200px) {
