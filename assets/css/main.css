@@ -45,7 +45,7 @@ body button a {
 }
 @media (min-width: 1200px) {
   body {
-    background-color: var(--gray-1);
+    background-color: var(--gray-3);
   }
 
   #main {
@@ -81,6 +81,7 @@ body button a {
   width: 243px;
   height: 243px;
   align-self: center;
+  cursor: pointer;
 }
 #header .btn-menu {
   width: 42px;
@@ -385,7 +386,7 @@ body button a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 10px;
 }
 #footer nav {
   display: none;
@@ -414,6 +415,7 @@ body button a {
 #footer #logo-footer {
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 #footer #logo-footer img {
   width: 283px;
@@ -476,7 +478,7 @@ body button a {
 @media (min-width: 1200px) {
   #footer {
     position: relative;
-    margin-top: 1900px;
+    margin-top: 1930px;
   }
   #footer nav ul {
     margin-left: 30px;
@@ -490,6 +492,9 @@ body button a {
   }
 }
 @media (min-width: 1920px) {
+  #footer {
+    margin-top: 2800px;
+  }
   #footer nav ul {
     margin-left: 60px;
   }
@@ -502,6 +507,7 @@ body button a {
   --black: #000;
   --gray-1: #DFE4EA;
   --gray-2: #D2DAE2;
+  --gray-3: rgb(	223, 228,234, 0.5);
 }
 
 #main {
@@ -554,11 +560,11 @@ body button a {
 #main section .home-services, #main section .home-local, #main section .home-contact {
   background-color: var(--gray-2);
   position: relative;
-  height: 145px;
+  height: 160px;
 }
 #main section .home-services img, #main section .home-local img, #main section .home-contact img {
   width: 143px;
-  height: 102px;
+  height: 142px;
   top: 10px;
   position: absolute;
 }
@@ -589,11 +595,12 @@ body button a {
 }
 #main section .home-services .descrição button, #main section .home-local .descrição button, #main section .home-contact .descrição button {
   position: absolute;
-  left: 100px;
-  top: 120px;
-  width: 62px;
+  left: 70px;
+  top: 130px;
+  width: 82px;
   height: 30px;
-  border-radius: 5px;
+  border-radius: 7px;
+  cursor: pointer;
 }
 #main section .home-services .descrição button a, #main section .home-local .descrição button a, #main section .home-contact .descrição button a {
   font-size: 15px;
@@ -603,7 +610,7 @@ body button a {
   flex-direction: row-reverse;
 }
 #main section .home-local img {
-  height: 102px;
+  height: 142px;
 }
 #main section .home-local .descrição {
   left: 10px;
@@ -611,14 +618,15 @@ body button a {
 
 @media (min-width: 375px) {
   #main section .home-services, #main section .home-local, #main section .home-contact {
-    height: 145px;
+    height: 165px;
   }
   #main section .home-services img, #main section .home-local img, #main section .home-contact img {
     width: 163px;
-    height: 122px;
+    height: 142px;
   }
   #main section .home-services .descrição button, #main section .home-local .descrição button, #main section .home-contact .descrição button {
-    left: 120px;
+    top: 135px;
+    left: 100px;
   }
 }
 @media (min-width: 768px) {
@@ -640,23 +648,34 @@ body button a {
   #main section .text p {
     top: 80px;
     font-size: 20px;
+    margin-bottom: 120px;
   }
   #main section .home-services, #main section .home-local, #main section .home-contact {
-    height: 185px;
+    height: 245px;
   }
   #main section .home-services img, #main section .home-local img, #main section .home-contact img {
-    width: 200px;
-    height: 162px;
+    width: 270px;
+    height: 212px;
+  }
+  #main section .home-services .descrição, #main section .home-local .descrição, #main section .home-contact .descrição {
+    right: 90px;
   }
   #main section .home-services .descrição h2, #main section .home-local .descrição h2, #main section .home-contact .descrição h2 {
     font-size: 30px;
   }
   #main section .home-services .descrição p, #main section .home-local .descrição p, #main section .home-contact .descrição p {
-    font-size: 20px;
+    font-size: 25px;
     top: 70px;
   }
   #main section .home-services .descrição button, #main section .home-local .descrição button, #main section .home-contact .descrição button {
-    left: 120px;
+    top: 195px;
+    left: 350px;
+    width: 112px;
+    height: 40px;
+    border-radius: 8px;
+  }
+  #main section .home-services .descrição button a, #main section .home-local .descrição button a, #main section .home-contact .descrição button a {
+    font-size: 20px;
   }
 }
 @media (min-width: 1200px) {
@@ -692,8 +711,31 @@ body button a {
     top: 100px;
     font-size: 25px;
   }
+  #main section .home-services, #main section .home-local, #main section .home-contact {
+    height: 335px;
+  }
+  #main section .home-services img, #main section .home-local img, #main section .home-contact img {
+    width: 546px;
+    height: 313px;
+  }
+  #main section .home-services .descrição, #main section .home-local .descrição, #main section .home-contact .descrição {
+    right: 30px;
+  }
+  #main section .home-services .descrição button, #main section .home-local .descrição button, #main section .home-contact .descrição button {
+    top: 285px;
+    left: 480px;
+    width: 142px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  #main section .home-services .descrição button a, #main section .home-local .descrição button a, #main section .home-contact .descrição button a {
+    font-size: 25px;
+  }
 }
 @media (min-width: 1920px) {
+  #main {
+    height: 3000px;
+  }
   #main img {
     height: 850px;
   }
@@ -709,6 +751,34 @@ body button a {
   #main section .text p {
     top: 110px;
     font-size: 30px;
+    margin-bottom: 170px;
+  }
+  #main section .home-services, #main section .home-local, #main section .home-contact {
+    height: 545px;
+  }
+  #main section .home-services img, #main section .home-local img, #main section .home-contact img {
+    width: 570px;
+    height: 512px;
+  }
+  #main section .home-services .descrição, #main section .home-local .descrição, #main section .home-contact .descrição {
+    right: 270px;
+  }
+  #main section .home-services .descrição h2, #main section .home-local .descrição h2, #main section .home-contact .descrição h2 {
+    font-size: 40px;
+  }
+  #main section .home-services .descrição p, #main section .home-local .descrição p, #main section .home-contact .descrição p {
+    font-size: 35px;
+    top: 100px;
+  }
+  #main section .home-services .descrição button, #main section .home-local .descrição button, #main section .home-contact .descrição button {
+    top: 455px;
+    left: 890px;
+    width: 222px;
+    height: 80px;
+    border-radius: 10px;
+  }
+  #main section .home-services .descrição button a, #main section .home-local .descrição button a, #main section .home-contact .descrição button a {
+    font-size: 40px;
   }
 }
 

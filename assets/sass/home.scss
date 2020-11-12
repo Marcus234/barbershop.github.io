@@ -46,10 +46,10 @@
         .home-services, .home-local, .home-contact {
             background-color: var(--gray-2);
             position: relative;
-            height: 145px;
+            height: 160px;
             img {
                 width: 143px;
-                height: 102px;
+                height: 142px;
                 top: 10px;
                 position: absolute;
             }
@@ -79,11 +79,12 @@
                 }
                 button {
                     position: absolute;
-                    left: 100px;
-                    top: 120px;
-                    width: 62px;
+                    left: 70px;
+                    top: 130px;
+                    width: 82px;
                     height: 30px;
-                    border-radius: 5px;
+                    border-radius: 7px;
+                    cursor: pointer;
                     a {
                         font-size: 15px;
                     }
@@ -94,7 +95,7 @@
             background-color: var(--white);
             flex-direction: row-reverse;
             img {
-                height: 102px;
+                height: 142px;
             }
             .descrição {
                 left: 10px;
@@ -106,14 +107,15 @@
     #main {
         section {
             .home-services, .home-local, .home-contact {
-                height: 145px;
+                height: 165px;
                 img {
                     width: 163px;
-                    height: 122px;
+                    height: 142px;
                 }
                 .descrição {
                     button {
-                        left: 120px;
+                        top: 135px;
+                        left: 100px;
                     }
                 }
             }
@@ -142,24 +144,33 @@
                 p {
                     top: 80px;
                     font-size: 20px;
+                    margin-bottom: 120px;
                 }
             }
             .home-services, .home-local, .home-contact {
-                height: 185px;
+                height: 245px;
                 img {
-                    width: 200px;
-                    height: 162px;
+                    width: 270px;
+                    height: 212px;
                 }
                 .descrição {
+                    right: 90px;
                     h2 {
                         font-size: 30px;
                     }
                     p {
-                        font-size: 20px;
+                        font-size: 25px;
                         top: 70px;
                     }
                     button {
-                        left: 120px;
+                        top: 195px;
+                        left: 350px;
+                        width: 112px;
+                        height: 40px;
+                        border-radius: 8px;
+                        a {
+                            font-size: 20px;
+                        }
                     }
                 }
             }
@@ -201,11 +212,32 @@
                     font-size: 25px;
                 }
             }
+            .home-services, .home-local, .home-contact {
+                height: 335px;
+                img {
+                    width: 546px;
+                    height: 313px;
+                }
+                .descrição {
+                    right: 30px;
+                    button {
+                        top: 285px;
+                        left: 480px;
+                        width: 142px;
+                        height: 50px;
+                        border-radius: 10px;
+                        a {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
 @media (min-width: 1920px) {
     #main {
+        height: 3000px;
         img {
             height: 850px;
         }
@@ -223,6 +255,34 @@
                 p {
                     top: 110px;
                     font-size: 30px;
+                    margin-bottom: 170px;
+                }
+            }
+            .home-services, .home-local, .home-contact {
+                height: 545px;
+                img {
+                    width: 570px;
+                    height: 512px;
+                }
+                .descrição {
+                    right: 270px;
+                    h2 {
+                        font-size: 40px;
+                    }
+                    p {
+                        font-size: 35px;
+                        top: 100px;
+                    }
+                    button {
+                        top: 455px;
+                        left: 890px;
+                        width: 222px;
+                        height: 80px;
+                        border-radius: 10px;
+                        a {
+                            font-size: 40px;
+                        }
+                    }
                 }
             }
         }
