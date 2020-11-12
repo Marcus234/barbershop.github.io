@@ -1,4 +1,4 @@
-#main {
+#home {
     flex-direction: column;
     img {
         width: 100%;
@@ -104,7 +104,7 @@
     }
 }
 @media (min-width: 375px) {
-    #main {
+    #home {
         section {
             .home-services, .home-local, .home-contact {
                 height: 165px;
@@ -123,7 +123,7 @@
     }
 }
 @media (min-width: 768px) {
-    #main {
+    #home {
         position: relative;
         top: -20px;
         .title {
@@ -180,7 +180,7 @@
     }
 }
 @media (min-width: 1200px) {
-    #main {
+    #home {
         height: 2000px;
         align-self: center;
         top: 0;
@@ -238,7 +238,7 @@
     }
 }
 @media (min-width: 1920px) {
-    #main {
+    #home {
         height: 3000px;
         img {
             height: 850px;
