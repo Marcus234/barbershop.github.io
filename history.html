@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberShop</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="BarberShop: A barbearia feita para você"/>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preload" href="assets/css/main.css" as="style" />
+</head>
+<body>
+    
+    <header id="header">
+
+        <div id="overlay"></div>
+
+          <a href="index.html">
+
+            <img src="assets/logo/barbershop.png" id="logo" alt="Logo">
+
+          </a>
+
+        <img src="assets/imagens/open-menu.svg" width="42" height="42" alt="Botão menu" class="btn-menu" id="btn-menu" />
+
+        <div id="menu" class="menu">
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVIÇOS</a></li>
+                    <li><a href="history.html">QUEM SOMOS</a></li>
+                    <li><a href="contact.html">CONTATO</a></li>
+
+                    <li class="divider"><hr /></li>
+    
+                    <button><a href="login.html">LOGIN</a></button>
+
+                    <div class="perfil">
+
+                      <img src="assets/imagens/login.png" alt="Foto de Perfil">
+
+                      <div class="usuário">
+
+                        <h2>Marcus Ribeiro</h2>
+                        <small>marcusvribeiro23@hotmail.com</small>
+
+                      </div>
+
+                    </div>
+
+                    <div class="deslogar">
+
+                      <img src="assets/imagens/right-arrow.svg" alt="">
+
+                      <p>Sair</p>
+                      
+                    </div>
+
+                </ul>
+
+                <div>
+
+                    
+
+                </div>
+
+            </nav>
+
+            
+        </div>
+        
+        <img src="assets/imagens/close-menu.svg" width="42" height="42" alt="Botão menu" class="btn-close" id="btn-close" />
+
+    </header>
+
+    <main id="main"></main>
+
+    <footer id="footer">
+
+      <nav>
+
+        <ul>LINKS
+
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="services.html">SERVIÇOS</a></li>
+          <li><a href="history.html">QUEM SOMOS</a></li>
+          <li><a href="contact.html">CONTATO</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+
+        </ul>
+
+      </nav>
+
+      <div id="socials">
+
+        <div class="facebook">
+
+          <img src="assets/imagens/facebook.svg" alt="Facebook">
+
+          <p>BarberShop</p>
+
+        </div>
+
+        <div class="instagram">
+
+          <img src="assets/imagens/instagram.svg" alt="Instagram">
+
+          <p>@barbershop</p>
+
+        </div>
+
+        <div class="whatsapp">
+
+          <img src="assets/imagens/whatsapp.svg" alt="WhatsApp">
+
+          <p>(11) 99999-0000</p>
+
+        </div>
+
+      </div>
+
+      <div id="logo-footer">
+
+        <a href="index.html">
+      
+          <img src="assets/logo/barbershop-footer.png" alt="Logo footer">
+
+        </a>
+
+      </div>
+
+      <hr>
+
+      <p>© Copyright HcodeLab</p>
+
+    </footer>
+
+    <script>
+        const btnOpen = document.querySelector('#btn-menu');
+          btnOpen.addEventListener('click', e=> {
+            const header = document.querySelector('#header');
+            header.classList.toggle('open-menu');
+          }
+        );
+        const btnClose = document.querySelector('#btn-close');
+          btnClose.addEventListener('click', e=> {
+            const header = document.querySelector('#header');
+            header.classList.toggle('open-menu');
+          }
+        );
+      </script>
+</body>
+</html>

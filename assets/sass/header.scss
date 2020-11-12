@@ -8,6 +8,7 @@
         height: 243px;
         align-self: center;
         cursor: pointer;
+        margin-left: 40px;
     }
     .btn-menu {
         width: 42px;
@@ -132,7 +133,7 @@
         #logo {
             position: absolute;
             transition: all 1s ease-in-out; 
-            left: calc(100px - 35px);
+            left: calc(100px - 65px);
             z-index: 5;
         }
         #menu {
@@ -178,6 +179,9 @@
 
 @media (min-width: 375px) {
     #header {
+        #logo {
+            margin-left: 70px;
+        }
         #menu {
             nav {
                 ul {
@@ -195,10 +199,21 @@
                 }
             }
         }
+        &.open-menu {
+            #logo {
+                left: calc(100px - 60px);
+            }
+        }
     }
 }
 @media (min-width: 768px) {
     #header {
+        #logo {
+            position: relative;
+            top: -40px;
+            margin: 0;
+            margin-left: 20px;
+        }
         #menu {
             nav {
                 ul {
@@ -248,7 +263,7 @@
         }
         &.open-menu {
             #logo {
-                left: calc(100px - -340px);
+                left: calc(100px - -300px);
             }
             #menu {
                 width: 70%;
