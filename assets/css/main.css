@@ -11,6 +11,14 @@ body, div, article, aside, footer, header, main, nav, section, ul, ol, li, butto
   display: flex;
 }
 
+h1 {
+  color: var(--white);
+}
+
+h2, h3, h4, h5, h6, small, p {
+  color: var(--black);
+}
+
 body {
   margin: 0;
   flex-direction: column;
@@ -48,10 +56,10 @@ body button a {
     background-color: var(--gray-3);
   }
 
-  .main {
+  .main, .main-services, .main-history, .main-contact, .main-calendary, .main-error {
     background-color: var(--white);
     align-self: center;
-    position: absolute;
+    position: relative;
     margin: auto 65px;
     width: 90%;
   }
@@ -391,6 +399,15 @@ body button a {
   }
 }
 #footer {
+  margin-top: 10px;
+}
+
+#footer-services {
+  position: relative;
+  margin-top: 70px;
+}
+
+#footer, #footer-services, #footer-history, #footer-contact, #footer-calendary, #footer-error {
   position: relative;
   width: 100%;
   height: 291px;
@@ -399,71 +416,70 @@ body button a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
 }
-#footer nav {
+#footer nav, #footer-services nav, #footer-history nav, #footer-contact nav, #footer-calendary nav, #footer-error nav {
   display: none;
 }
-#footer #socials {
+#footer #socials, #footer-services #socials, #footer-history #socials, #footer-contact #socials, #footer-calendary #socials, #footer-error #socials {
   width: 190px;
   height: 59px;
 }
-#footer #socials .facebook, #footer #socials .instagram, #footer #socials .whatsapp {
+#footer #socials .facebook, #footer #socials .instagram, #footer #socials .whatsapp, #footer-services #socials .facebook, #footer-services #socials .instagram, #footer-services #socials .whatsapp, #footer-history #socials .facebook, #footer-history #socials .instagram, #footer-history #socials .whatsapp, #footer-contact #socials .facebook, #footer-contact #socials .instagram, #footer-contact #socials .whatsapp, #footer-calendary #socials .facebook, #footer-calendary #socials .instagram, #footer-calendary #socials .whatsapp, #footer-error #socials .facebook, #footer-error #socials .instagram, #footer-error #socials .whatsapp {
   top: 70px;
   position: relative;
   margin-left: -50px;
 }
-#footer #socials .facebook {
+#footer #socials .facebook, #footer-services #socials .facebook, #footer-history #socials .facebook, #footer-contact #socials .facebook, #footer-calendary #socials .facebook, #footer-error #socials .facebook {
   padding-left: 30px;
 }
-#footer #socials .instagram {
+#footer #socials .instagram, #footer-services #socials .instagram, #footer-history #socials .instagram, #footer-contact #socials .instagram, #footer-calendary #socials .instagram, #footer-error #socials .instagram {
   padding-left: 30px;
 }
-#footer #socials .whatsapp {
+#footer #socials .whatsapp, #footer-services #socials .whatsapp, #footer-history #socials .whatsapp, #footer-contact #socials .whatsapp, #footer-calendary #socials .whatsapp, #footer-error #socials .whatsapp {
   padding-left: 30px;
 }
-#footer #socials p {
+#footer #socials p, #footer-services #socials p, #footer-history #socials p, #footer-contact #socials p, #footer-calendary #socials p, #footer-error #socials p {
   display: none;
 }
-#footer #logo-footer {
+#footer #logo-footer, #footer-services #logo-footer, #footer-history #logo-footer, #footer-contact #logo-footer, #footer-calendary #logo-footer, #footer-error #logo-footer {
   align-items: center;
   position: relative;
   cursor: pointer;
 }
-#footer #logo-footer img {
+#footer #logo-footer img, #footer-services #logo-footer img, #footer-history #logo-footer img, #footer-contact #logo-footer img, #footer-calendary #logo-footer img, #footer-error #logo-footer img {
   width: 283px;
 }
-#footer hr {
+#footer hr, #footer-services hr, #footer-history hr, #footer-contact hr, #footer-calendary hr, #footer-error hr {
   position: relative;
   top: -60px;
   background-color: var(--white);
   width: 90%;
 }
-#footer p {
+#footer p, #footer-services p, #footer-history p, #footer-contact p, #footer-calendary p, #footer-error p {
   position: relative;
   top: -60px;
   color: var(--white);
 }
 
 @media (min-width: 768px) {
-  #footer nav {
+  #footer nav, #footer-services nav, #footer-history nav, #footer-contact nav, #footer-calendary nav, #footer-error nav {
     position: absolute;
     display: flex;
     align-self: flex-start;
   }
-  #footer nav ul {
+  #footer nav ul, #footer-services nav ul, #footer-history nav ul, #footer-contact nav ul, #footer-calendary nav ul, #footer-error nav ul {
     font-weight: bold;
     display: inline;
     color: var(--white);
     align-self: flex-start;
     font-size: 25px;
   }
-  #footer nav ul li a {
+  #footer nav ul li a, #footer-services nav ul li a, #footer-history nav ul li a, #footer-contact nav ul li a, #footer-calendary nav ul li a, #footer-error nav ul li a {
     font-size: 20px;
     color: var(--white);
     text-decoration: none;
   }
-  #footer #socials {
+  #footer #socials, #footer-services #socials, #footer-history #socials, #footer-contact #socials, #footer-calendary #socials, #footer-error #socials {
     align-self: center;
     display: inline;
     margin: 0;
@@ -471,36 +487,43 @@ body button a {
     position: relative;
     right: 20px;
   }
-  #footer #socials .facebook, #footer #socials .instagram, #footer #socials .whatsapp {
+  #footer #socials .facebook, #footer #socials .instagram, #footer #socials .whatsapp, #footer-services #socials .facebook, #footer-services #socials .instagram, #footer-services #socials .whatsapp, #footer-history #socials .facebook, #footer-history #socials .instagram, #footer-history #socials .whatsapp, #footer-contact #socials .facebook, #footer-contact #socials .instagram, #footer-contact #socials .whatsapp, #footer-calendary #socials .facebook, #footer-calendary #socials .instagram, #footer-calendary #socials .whatsapp, #footer-error #socials .facebook, #footer-error #socials .instagram, #footer-error #socials .whatsapp {
     height: 58px;
     top: 90px;
     margin-top: 10px;
   }
-  #footer #socials p {
+  #footer #socials p, #footer-services #socials p, #footer-history #socials p, #footer-contact #socials p, #footer-calendary #socials p, #footer-error #socials p {
     top: 0;
     display: flex;
   }
-  #footer #logo-footer {
+  #footer #logo-footer, #footer-services #logo-footer, #footer-history #logo-footer, #footer-contact #logo-footer, #footer-calendary #logo-footer, #footer-error #logo-footer {
     align-self: flex-end;
   }
-  #footer hr {
+  #footer hr, #footer-services hr, #footer-history hr, #footer-contact hr, #footer-calendary hr, #footer-error hr {
     width: 80%;
     top: -40px;
   }
 }
 @media (min-width: 1200px) {
   #footer {
-    position: relative;
     margin-top: -60px;
   }
-  #footer nav ul {
+
+  #footer-services {
+    margin-top: -150px;
+  }
+
+  #footer, #footer-services, #footer-history, #footer-contact, #footer-calendary, #footer-error {
+    position: relative;
+  }
+  #footer nav ul, #footer-services nav ul, #footer-history nav ul, #footer-contact nav ul, #footer-calendary nav ul, #footer-error nav ul {
     margin-left: 30px;
     font-size: 30px;
   }
-  #footer #logo-footer {
+  #footer #logo-footer, #footer-services #logo-footer, #footer-history #logo-footer, #footer-contact #logo-footer, #footer-calendary #logo-footer, #footer-error #logo-footer {
     right: 50px;
   }
-  #footer hr {
+  #footer hr, #footer-services hr, #footer-history hr, #footer-contact hr, #footer-calendary hr, #footer-error hr {
     width: 90%;
   }
 }
@@ -508,10 +531,15 @@ body button a {
   #footer {
     margin-top: -200px;
   }
-  #footer nav ul {
+
+  #footer-services {
+    margin-top: -90px;
+  }
+
+  #footer nav ul, #footer-services nav ul, #footer-history nav ul, #footer-contact nav ul, #footer-calendary nav ul, #footer-error nav ul {
     margin-left: 60px;
   }
-  #footer #logo-footer {
+  #footer #logo-footer, #footer-services #logo-footer, #footer-history #logo-footer, #footer-contact #logo-footer, #footer-calendary #logo-footer, #footer-error #logo-footer {
     right: 80px;
   }
 }
@@ -796,6 +824,190 @@ body button a {
   }
   #home section .home-services .descrição button a, #home section .home-local .descrição button a, #home section .home-contact .descrição button a {
     font-size: 40px;
+  }
+}
+#services {
+  flex-direction: column;
+}
+#services img {
+  width: 100%;
+  height: 145px;
+}
+#services h1 {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 100px;
+  font-size: 30px;
+}
+#services .serviços {
+  display: none;
+}
+#services .serviços-1, #services .serviços-2, #services .serviços-3, #services .serviços-4, #services .serviços-5, #services .serviços-6 {
+  position: relative;
+  margin-top: 90px;
+  flex-direction: column;
+  align-self: center;
+  border: 2px var(--black) solid;
+  width: 90%;
+  padding: 20px;
+}
+#services .serviços-1 img, #services .serviços-2 img, #services .serviços-3 img, #services .serviços-4 img, #services .serviços-5 img, #services .serviços-6 img {
+  position: relative;
+  width: 50%;
+  align-self: center;
+  top: -90px;
+  background-color: var(--white);
+}
+#services .serviços-1 h2, #services .serviços-1 ul, #services .serviços-2 h2, #services .serviços-2 ul, #services .serviços-3 h2, #services .serviços-3 ul, #services .serviços-4 h2, #services .serviços-4 ul, #services .serviços-5 h2, #services .serviços-5 ul, #services .serviços-6 h2, #services .serviços-6 ul {
+  position: absolute;
+  top: 70px;
+}
+#services .serviços-1 h2, #services .serviços-2 h2, #services .serviços-3 h2, #services .serviços-4 h2, #services .serviços-5 h2, #services .serviços-6 h2 {
+  font-size: 30px;
+  font-weight: bold;
+  align-self: center;
+}
+#services .serviços-1 ul, #services .serviços-2 ul, #services .serviços-3 ul, #services .serviços-4 ul, #services .serviços-5 ul, #services .serviços-6 ul {
+  padding: 0;
+  position: relative;
+  top: -20px;
+  display: inline;
+}
+#services .serviços-1 ul li, #services .serviços-2 ul li, #services .serviços-3 ul li, #services .serviços-4 ul li, #services .serviços-5 ul li, #services .serviços-6 ul li {
+  margin-top: 20px;
+  font-size: 20px;
+}
+#services .serviços-1, #services .serviços-2, #services .serviços-3, #services .serviços-4, #services .serviços-5, #services .serviços-6 {
+  height: 700px;
+}
+#services .serviços-2 img, #services .serviços-5 img {
+  width: 70%;
+}
+#services .serviços-2 ul .first, #services .serviços-5 ul .first {
+  font-weight: bold;
+}
+#services .serviços-2 ul .last, #services .serviços-5 ul .last {
+  position: relative;
+  top: 60px;
+  display: inline;
+}
+#services .serviços-2 button, #services .serviços-5 button {
+  position: relative;
+  width: 237px;
+  height: 36px;
+}
+#services .serviços-2 button a, #services .serviços-5 button a {
+  font-size: 20px;
+}
+#services .serviços-3 {
+  height: 450px;
+}
+#services p {
+  position: relative;
+  top: 20px;
+  margin-left: 20px;
+  font-size: 25px;
+  align-self: center;
+}
+#services p b {
+  font-weight: bold;
+}
+#services button {
+  position: relative;
+  top: 30px;
+  width: 200px;
+  height: 50px;
+}
+#services button a {
+  font-size: 25px;
+}
+
+@media (min-width: 768px) {
+  #services img {
+    height: 250px;
+  }
+  #services h1 {
+    font-size: 45px;
+    margin-top: 170px;
+  }
+  #services .serviços-1, #services .serviços-2, #services .serviços-3 {
+    display: none;
+  }
+  #services .serviços {
+    display: flex;
+  }
+  #services .serviços .serviços-4, #services .serviços .serviços-5, #services .serviços .serviços-6 {
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 800px;
+  }
+  #services .serviços .serviços-4 img, #services .serviços .serviços-5 img, #services .serviços .serviços-6 img {
+    top: -100px;
+    height: 20%;
+  }
+  #services .serviços .serviços-5 img {
+    width: 60%;
+    padding: 20px;
+  }
+  #services p {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-services {
+    height: 1500px;
+  }
+
+  #services img {
+    height: 300px;
+  }
+  #services h1 {
+    margin-top: 230px;
+  }
+  #services .serviços {
+    margin-top: 30px;
+  }
+  #services .serviços .serviços-4, #services .serviços .serviços-5, #services .serviços .serviços-6 {
+    height: 650px;
+  }
+  #services .serviços .serviços-5 button {
+    top: 90px;
+  }
+}
+@media (min-width: 1920px) {
+  .main-services {
+    height: 1700px;
+  }
+
+  #services img {
+    height: 400px;
+  }
+  #services h1 {
+    font-size: 60px;
+    margin-top: 300px;
+  }
+  #services .serviços {
+    align-self: center;
+    width: 70%;
+    margin-top: 30px;
+  }
+  #services .serviços .serviços-4, #services .serviços .serviços-5, #services .serviços .serviços-6 {
+    height: 800px;
+  }
+  #services .serviços .serviços-4 h2, #services .serviços .serviços-5 h2, #services .serviços .serviços-6 h2 {
+    font-size: 40px;
+  }
+  #services .serviços .serviços-4 ul, #services .serviços .serviços-5 ul, #services .serviços .serviços-6 ul {
+    top: 10px;
+  }
+  #services .serviços .serviços-4 ul li, #services .serviços .serviços-5 ul li, #services .serviços .serviços-6 ul li {
+    font-size: 25px;
+  }
+  #services .serviços .serviços-5 button {
+    top: 120px;
+  }
+  #services p, #services button {
+    top: 50px;
   }
 }
 

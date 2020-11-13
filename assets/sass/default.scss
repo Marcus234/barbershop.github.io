@@ -9,6 +9,13 @@
 body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture, hr, form {
     display: flex;
 }
+h1 {
+    color: var(--white);
+}
+
+h2, h3, h4, h5, h6, small, p {
+    color: var(--black);
+}
 
 body {
     margin: 0;
@@ -47,10 +54,10 @@ body {
     body {
         background-color: var(--gray-3);
     }
-    .main {
+    .main, .main-services, .main-history, .main-contact, .main-calendary, .main-error {
         background-color: var(--white);
         align-self: center;
-        position: absolute;
+        position: relative;
         margin: auto 65px;
         width: 90%;
     }

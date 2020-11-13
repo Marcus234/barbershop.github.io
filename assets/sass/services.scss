@@ -1,0 +1,197 @@
+#services {
+    flex-direction: column;
+    img {
+        width: 100%;
+        height: 145px;
+    }
+    h1 {
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 100px;
+        font-size: 30px;
+    }
+    .serviços {
+        display: none;
+    }
+    .serviços-1, .serviços-2, .serviços-3, .serviços-4, .serviços-5, .serviços-6 {
+        position: relative;
+        margin-top: 90px;
+        flex-direction: column;
+        align-self: center;
+        border: 2px var(--black) solid;
+        width: 90%;
+        padding: 20px;
+        img {
+            position: relative;
+            width: 50%;
+            align-self: center;
+            top: -90px;
+            background-color: var(--white);
+        }
+        h2, ul {
+            position: absolute;
+            top: 70px;
+        }
+        h2 {
+            font-size: 30px;
+            font-weight: bold;
+            align-self: center;
+        }
+        ul {
+            padding: 0;
+            position: relative;
+            top: -20px;
+            display: inline;
+            li {
+                margin-top: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+    .serviços-1, .serviços-2, .serviços-3, .serviços-4, .serviços-5, .serviços-6 {
+        height: 700px;
+    }
+    .serviços-2, .serviços-5 {
+        img {
+            width: 70%;
+        }
+        ul {
+            .first {
+                font-weight: bold;
+            }
+            .last {
+                position: relative;
+                top: 60px;
+                display: inline;
+            }
+        }
+        button {
+            position: relative;
+            width: 237px;
+            height: 36px;
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+    .serviços-3 {
+        height: 450px;
+    }
+    p {
+        position: relative;
+        top: 20px;
+        margin-left: 20px;
+        font-size: 25px;
+        align-self: center;
+        b {
+            font-weight: bold;
+        }
+    }
+    button {
+        position: relative;
+        top: 30px;
+        width: 200px;
+        height: 50px;
+        a {
+            font-size: 25px;
+        }
+    }
+}
+@media (min-width: 768px) {
+    #services {
+        img {
+            height: 250px;
+        }
+        h1 {
+            font-size: 45px;
+            margin-top: 170px;
+        }
+        .serviços-1, .serviços-2, .serviços-3 {
+            display: none;
+        }
+        .serviços {
+            display: flex;
+            .serviços-4, .serviços-5, .serviços-6 {
+                margin-right: 10px;
+                margin-left: 10px;
+                height: 800px;
+                img {
+                    top: -100px;
+                    height: 20%;
+                }
+            }
+            .serviços-5 {
+                img {
+                    width: 60%;
+                    padding: 20px;
+                }
+            }
+        }
+        p {
+            font-size: 30px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .main-services {
+        height: 1500px;
+    }
+    #services {
+        img {
+            height: 300px;
+        }
+        h1 {
+            margin-top: 230px;
+        }
+        .serviços {
+            margin-top: 30px;
+            .serviços-4, .serviços-5, .serviços-6 {
+                height: 650px;
+            }
+            .serviços-5 {
+                button {
+                    top: 90px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1920px) {
+    .main-services {
+        height: 1700px;
+    }
+    #services {
+        img {
+            height: 400px;
+        }
+        h1 {
+            font-size: 60px;
+            margin-top: 300px;
+        }
+        .serviços {
+            align-self: center;
+            width: 70%;
+            margin-top: 30px;
+            .serviços-4, .serviços-5, .serviços-6 {
+                height: 800px;
+                h2 {
+                    font-size: 40px;
+                }
+                ul {
+                    top: 10px;
+                    li {
+                        font-size: 25px;
+                    }
+                }
+            }
+            .serviços-5 {
+                button {
+                    top: 120px;
+                }
+            }
+        }
+        p, button {
+            top: 50px;
+        }
+    }
+}
