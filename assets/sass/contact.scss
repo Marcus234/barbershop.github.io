@@ -1,0 +1,223 @@
+#contact {
+    flex-direction: column;
+    img {
+        width: 100%;
+        height: 145px;
+    }
+    h1 {
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 100px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 20px;
+        margin-left: 10px;
+        margin: 30px 0 0 10px;
+        font-weight: bold;
+    }
+    hr {
+        position: relative;
+        margin: 0 0 0 10px;
+        width: 30%;
+        height: 4px;
+        align-self: flex-start;
+    }
+    .campo {
+        margin-top: 20px;
+        flex-direction: column;
+        width: 100%;
+        .fields {
+            flex-direction: column;
+            input {
+                padding-top: 0;
+            }
+        }
+        .field, .field-1 {
+            position: relative;
+            flex-direction: column;
+            width: 100%;
+            label {
+                color: var(--black);
+                opacity: 50%;
+                font-size: 14px;
+                position: absolute;
+                top: 10px;
+                left: 20px;
+                transition: color .3s ease-in-out;
+                z-index: 2;
+            }
+            input, textarea, select {
+                border: var(--black) 1px solid;
+                line-height: 1.5em;
+                padding: 10px;
+                padding-top: 33px;
+                font-size: 16px;
+                color: var(--black);
+                opacity: 50%;
+                outline: none;
+                border-radius: var(--black);
+                position: relative;
+                z-index: 1;
+                top: 5px;
+                transition: border-color .3s ease-in-out;
+                width: 95%;
+                align-self: center;
+                background-color: transparent;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                &:focus {
+                    border-color: var(--black);
+                    opacity: 100%;
+                    + label {
+                        color: var(--black);
+                        opacity: 100%;
+                    }
+                }
+            }
+        }
+        .field-1 {
+            input, textarea, select {
+                height: 200px;
+            }
+        }
+        button {
+            top: 20px;
+            width: 100px;
+            height: 30px;
+        }
+    }
+    .mapa {
+        position: relative;
+        top: 50px;
+        width: 100%;
+        height: 300px;
+    }
+    p {
+        position: relative;
+        top: 40px;
+        margin-left: 20px;
+        font-size: 25px;
+        align-self: center;
+        b {
+            font-weight: bold;
+        }
+    }
+    button {
+        position: relative;
+        top: 50px;
+        width: 200px;
+        height: 50px;
+        a {
+            font-size: 25px;
+        }
+    }
+}
+@media (min-width:768px) {
+    #contact {
+        img {
+            height: 250px;
+        }
+        h1 {
+            margin-top: 180px;
+            font-size: 45px;
+        }
+        h2 {
+            margin-top: 20px;
+            font-size: 30px;
+            margin-left: 20px;
+        }
+        hr {
+            width: 20%;
+            margin-left: 20px;
+        }
+        .campo {
+            .field, .field-1 {
+                label {
+                    font-size: 20px;
+                    left: 30px;
+                }
+            }
+        }
+        .mapa {
+            height: 350px;
+        }
+        p {
+            font-size: 30px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .main-contact {
+        height: 2000px;
+    }
+    #contact {
+        img {
+            height: 350px;
+        }
+        h1 {
+            margin-top: 270px;
+        }
+        h2 {
+            font-size: 40px;
+            margin-left: 30px;
+        }
+        hr {
+            width: 20%;
+            margin-left: 30px;
+        }
+        .campo {
+            .field, .field-1 {
+                label {
+                    font-size: 25px;
+                    left: 40px;
+                }
+            }
+            button {
+                width: 120px;
+                height: 40px;
+            }
+        }
+        .mapa {
+            margin-top: -80px;
+            height: 450px;
+        }
+        p {
+            top: 50px;
+        }
+        button {
+            top: 50px;
+            margin-bottom: 150px;
+        }
+    }
+}
+@media (min-width: 1920px) {
+    #contact {
+        img {
+            height: 450px;
+        }
+        h1 {
+            font-size: 60px;
+            margin-top: 350px;
+        }
+        h2 {
+            font-size: 45px;
+        }
+        hr {
+            width: 15%;
+        }
+        .campo {
+            .field, .field-1 {
+                label {
+                    font-size: 30px;
+                    left: 60px;
+                }
+            }
+            button {
+                width: 120px;
+                height: 40px;
+            }
+        }
+    }
+}

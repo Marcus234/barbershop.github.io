@@ -1,0 +1,268 @@
+#history {
+    flex-direction: column;
+    position: relative;
+    img {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 145px;
+    }
+    h1 {
+        font-size: 25px;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    h2 {
+        flex-direction: row;
+        font-size: 20px;
+        margin: 0 0 0 5px;
+        font-weight: bold;
+    }
+    hr {
+        position: relative;
+        margin: 0 0 0 5px;
+        width: 70%;
+        height: 4px;
+    }
+    .history {
+        flex-direction: column;
+        align-self: flex-start;
+        margin-left: 10px;
+        width: 55%;
+        p {
+            font-size: 15px;
+        }
+        img {
+            margin-top: 20px;
+            position: absolute;
+            width: 136px;
+            height: 170px;
+            align-self: flex-end;
+            right: 0;
+        }
+    }
+    .comentários {
+        margin-top: 20px;
+        flex-direction: column;
+        .comentário-1, .comentário-2 {
+            background-color: var(--gray-4);
+            img {
+                position: relative;
+                top: 10px;
+                width: 100px;
+                height: 146px;
+            }
+            .coment {
+                position: relative;
+                top: 5px;
+                flex-direction: column;
+                margin-left: 10px;
+                h2 {
+                    margin-left: 0;
+                    font-size: 20px;
+                }
+                hr {
+                    width: 30%;
+                }
+                p {
+                    font-size: 15px;
+                }
+                small {
+                    position: relative;
+                    top: -5px;
+                    align-self: flex-end;
+                    margin-right: 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+        .comentário-2 {
+            background-color: var(--white);
+            .coment {
+                hr {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 375px) {
+    #history {
+        .comentários {
+            .comentário-1, .comentário-2 {
+                .coment {
+                    small {
+                        top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    #history {
+        img {
+            height: 250px;
+        }
+        h1 {
+            margin-top: 180px;
+            font-size: 45px;
+        }
+        h2 {
+            margin-top: 20px;
+            font-size: 30px;
+        }
+        hr {
+            width: 50%;
+        }
+        .history {
+            width: 70%;
+            p {
+                font-size: 25px;
+            }
+            img {
+                width: 196px;
+                height: 230px;
+            }
+        }
+        .comentários {
+            margin-top: 40px;
+            .comentário-1, .comentário-2 {
+                img {
+                    width: 160px;
+                    height: 196px;
+                }
+                .coment {
+                    top: -15px;
+                    h2 {
+                        font-size: 25px;
+                    }
+                    hr {
+                        width: 17%;
+                    }
+                    p {
+                        position: relative;
+                        top: -10px;
+                        font-size: 25px;
+                    }
+                    small {
+                        font-size: 20px;
+                        top: 0;
+                    }
+                }
+            }
+            .comentário-2 {
+                .coment {
+                    hr {
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:1200px) {
+    .main-history {
+        height: 1650px;
+    }
+    #history {
+        img {
+            height: 350px;
+        }
+        h1 {
+            margin-top: 270px;
+        }
+        h2 {
+            font-size: 40px;
+        }
+        hr {
+            width: 40%;
+        }
+        .history {
+            width: 65%;
+            p {
+                font-size: 30px;
+            }
+            img {
+                top: 410px;
+                width: 400px;
+                height: 350px;
+            }
+        }
+        .comentários {
+            margin-top: 120px;
+            .comentário-1, .comentário-2 {
+                img {
+                    width: 250px;
+                    height: 347px;
+                }
+                .coment {
+                    h2 {
+                        font-size: 35px;
+                    }
+                    p {
+                        font-size: 30px;
+                    }
+                    small {
+                        top: 110px;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:1920px) {
+    .main-history {
+        height: 2000px;
+    }
+    #history {
+        img {
+            height: 450px;
+        }
+        h1 {
+            font-size: 60px;
+            margin-top: 350px;
+        }
+        h2 {
+            font-size: 45px;
+        }
+        hr {
+            width: 30%;
+        }
+        .history {
+            margin-bottom: 120px;
+            p {
+                font-size: 35px;
+            }
+            img {
+                width: 500px;
+                height: 500px;
+                margin-top: 120px;
+            }
+        }
+        .comentários {
+            top: 20px;
+            position: relative;
+            .comentário-1, .comentário-2 {
+                img {
+                    width: 400px;
+                    height: 450px;
+                }
+                .coment {
+                    h2 {
+                        font-size: 45px;
+                    }
+                    p {
+                        font-size: 40px;
+                    }
+                    small {
+                        font-size: 30px;
+                        top: 150px;
+                    }
+                }
+            }
+        }
+    }
+}

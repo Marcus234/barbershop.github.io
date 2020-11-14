@@ -23,6 +23,10 @@ body {
   margin: 0;
   flex-direction: column;
 }
+body hr {
+  background-color: var(--black);
+  border: 0;
+}
 body button {
   border-radius: 10px;
   top: 70px;
@@ -407,6 +411,14 @@ body button a {
   margin-top: 70px;
 }
 
+#footer-history {
+  margin-top: 50px;
+}
+
+#footer-contact {
+  margin-top: 100px;
+}
+
 #footer, #footer-services, #footer-history, #footer-contact, #footer-calendary, #footer-error {
   position: relative;
   width: 100%;
@@ -462,6 +474,10 @@ body button a {
 }
 
 @media (min-width: 768px) {
+  #footer-history {
+    margin-top: 10px;
+  }
+
   #footer nav, #footer-services nav, #footer-history nav, #footer-contact nav, #footer-calendary nav, #footer-error nav {
     position: absolute;
     display: flex;
@@ -513,6 +529,14 @@ body button a {
     margin-top: -150px;
   }
 
+  #footer-history {
+    margin-top: -25px;
+  }
+
+  #footer-contact {
+    margin-top: -250px;
+  }
+
   #footer, #footer-services, #footer-history, #footer-contact, #footer-calendary, #footer-error {
     position: relative;
   }
@@ -536,6 +560,10 @@ body button a {
     margin-top: -90px;
   }
 
+  #footer-history {
+    margin-top: -70px;
+  }
+
   #footer nav ul, #footer-services nav ul, #footer-history nav ul, #footer-contact nav ul, #footer-calendary nav ul, #footer-error nav ul {
     margin-left: 60px;
   }
@@ -549,6 +577,7 @@ body button a {
   --gray-1: #DFE4EA;
   --gray-2: #D2DAE2;
   --gray-3: rgb(	223, 228,234, 0.5);
+  --gray-4: #DFE6E9;
 }
 
 #home {
@@ -838,6 +867,7 @@ body button a {
   margin-left: 10px;
   margin-top: 100px;
   font-size: 30px;
+  font-weight: bold;
 }
 #services .serviços {
   display: none;
@@ -959,10 +989,10 @@ body button a {
   }
 
   #services img {
-    height: 300px;
+    height: 350px;
   }
   #services h1 {
-    margin-top: 230px;
+    margin-top: 270px;
   }
   #services .serviços {
     margin-top: 30px;
@@ -980,11 +1010,11 @@ body button a {
   }
 
   #services img {
-    height: 400px;
+    height: 450px;
   }
   #services h1 {
     font-size: 60px;
-    margin-top: 300px;
+    margin-top: 350px;
   }
   #services .serviços {
     align-self: center;
@@ -1008,6 +1038,452 @@ body button a {
   }
   #services p, #services button {
     top: 50px;
+  }
+}
+#history {
+  flex-direction: column;
+  position: relative;
+}
+#history img {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 145px;
+}
+#history h1 {
+  font-size: 25px;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+#history h2 {
+  flex-direction: row;
+  font-size: 20px;
+  margin: 0 0 0 5px;
+  font-weight: bold;
+}
+#history hr {
+  position: relative;
+  margin: 0 0 0 5px;
+  width: 70%;
+  height: 4px;
+}
+#history .history {
+  flex-direction: column;
+  align-self: flex-start;
+  margin-left: 10px;
+  width: 55%;
+}
+#history .history p {
+  font-size: 15px;
+}
+#history .history img {
+  margin-top: 20px;
+  position: absolute;
+  width: 136px;
+  height: 170px;
+  align-self: flex-end;
+  right: 0;
+}
+#history .comentários {
+  margin-top: 20px;
+  flex-direction: column;
+}
+#history .comentários .comentário-1, #history .comentários .comentário-2 {
+  background-color: var(--gray-4);
+}
+#history .comentários .comentário-1 img, #history .comentários .comentário-2 img {
+  position: relative;
+  top: 10px;
+  width: 100px;
+  height: 146px;
+}
+#history .comentários .comentário-1 .coment, #history .comentários .comentário-2 .coment {
+  position: relative;
+  top: 5px;
+  flex-direction: column;
+  margin-left: 10px;
+}
+#history .comentários .comentário-1 .coment h2, #history .comentários .comentário-2 .coment h2 {
+  margin-left: 0;
+  font-size: 20px;
+}
+#history .comentários .comentário-1 .coment hr, #history .comentários .comentário-2 .coment hr {
+  width: 30%;
+}
+#history .comentários .comentário-1 .coment p, #history .comentários .comentário-2 .coment p {
+  font-size: 15px;
+}
+#history .comentários .comentário-1 .coment small, #history .comentários .comentário-2 .coment small {
+  position: relative;
+  top: -5px;
+  align-self: flex-end;
+  margin-right: 10px;
+  font-size: 15px;
+}
+#history .comentários .comentário-2 {
+  background-color: var(--white);
+}
+#history .comentários .comentário-2 .coment hr {
+  width: 70%;
+}
+
+@media (min-width: 375px) {
+  #history .comentários .comentário-1 .coment small, #history .comentários .comentário-2 .coment small {
+    top: 15px;
+  }
+}
+@media (min-width: 768px) {
+  #history img {
+    height: 250px;
+  }
+  #history h1 {
+    margin-top: 180px;
+    font-size: 45px;
+  }
+  #history h2 {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  #history hr {
+    width: 50%;
+  }
+  #history .history {
+    width: 70%;
+  }
+  #history .history p {
+    font-size: 25px;
+  }
+  #history .history img {
+    width: 196px;
+    height: 230px;
+  }
+  #history .comentários {
+    margin-top: 40px;
+  }
+  #history .comentários .comentário-1 img, #history .comentários .comentário-2 img {
+    width: 160px;
+    height: 196px;
+  }
+  #history .comentários .comentário-1 .coment, #history .comentários .comentário-2 .coment {
+    top: -15px;
+  }
+  #history .comentários .comentário-1 .coment h2, #history .comentários .comentário-2 .coment h2 {
+    font-size: 25px;
+  }
+  #history .comentários .comentário-1 .coment hr, #history .comentários .comentário-2 .coment hr {
+    width: 17%;
+  }
+  #history .comentários .comentário-1 .coment p, #history .comentários .comentário-2 .coment p {
+    position: relative;
+    top: -10px;
+    font-size: 25px;
+  }
+  #history .comentários .comentário-1 .coment small, #history .comentários .comentário-2 .coment small {
+    font-size: 20px;
+    top: 0;
+  }
+  #history .comentários .comentário-2 .coment hr {
+    width: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .main-history {
+    height: 1650px;
+  }
+
+  #history img {
+    height: 350px;
+  }
+  #history h1 {
+    margin-top: 270px;
+  }
+  #history h2 {
+    font-size: 40px;
+  }
+  #history hr {
+    width: 40%;
+  }
+  #history .history {
+    width: 65%;
+  }
+  #history .history p {
+    font-size: 30px;
+  }
+  #history .history img {
+    top: 410px;
+    width: 400px;
+    height: 350px;
+  }
+  #history .comentários {
+    margin-top: 120px;
+  }
+  #history .comentários .comentário-1 img, #history .comentários .comentário-2 img {
+    width: 250px;
+    height: 347px;
+  }
+  #history .comentários .comentário-1 .coment h2, #history .comentários .comentário-2 .coment h2 {
+    font-size: 35px;
+  }
+  #history .comentários .comentário-1 .coment p, #history .comentários .comentário-2 .coment p {
+    font-size: 30px;
+  }
+  #history .comentários .comentário-1 .coment small, #history .comentários .comentário-2 .coment small {
+    top: 110px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 1920px) {
+  .main-history {
+    height: 2000px;
+  }
+
+  #history img {
+    height: 450px;
+  }
+  #history h1 {
+    font-size: 60px;
+    margin-top: 350px;
+  }
+  #history h2 {
+    font-size: 45px;
+  }
+  #history hr {
+    width: 30%;
+  }
+  #history .history {
+    margin-bottom: 120px;
+  }
+  #history .history p {
+    font-size: 35px;
+  }
+  #history .history img {
+    width: 500px;
+    height: 500px;
+    margin-top: 120px;
+  }
+  #history .comentários {
+    top: 20px;
+    position: relative;
+  }
+  #history .comentários .comentário-1 img, #history .comentários .comentário-2 img {
+    width: 400px;
+    height: 450px;
+  }
+  #history .comentários .comentário-1 .coment h2, #history .comentários .comentário-2 .coment h2 {
+    font-size: 45px;
+  }
+  #history .comentários .comentário-1 .coment p, #history .comentários .comentário-2 .coment p {
+    font-size: 40px;
+  }
+  #history .comentários .comentário-1 .coment small, #history .comentários .comentário-2 .coment small {
+    font-size: 30px;
+    top: 150px;
+  }
+}
+#contact {
+  flex-direction: column;
+}
+#contact img {
+  width: 100%;
+  height: 145px;
+}
+#contact h1 {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 100px;
+  font-size: 30px;
+  font-weight: bold;
+}
+#contact h2 {
+  font-size: 20px;
+  margin-left: 10px;
+  margin: 30px 0 0 10px;
+  font-weight: bold;
+}
+#contact hr {
+  position: relative;
+  margin: 0 0 0 10px;
+  width: 30%;
+  height: 4px;
+  align-self: flex-start;
+}
+#contact .campo {
+  margin-top: 20px;
+  flex-direction: column;
+  width: 100%;
+}
+#contact .campo .fields {
+  flex-direction: column;
+}
+#contact .campo .fields input {
+  padding-top: 0;
+}
+#contact .campo .field, #contact .campo .field-1 {
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+}
+#contact .campo .field label, #contact .campo .field-1 label {
+  color: var(--black);
+  opacity: 50%;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  transition: color 0.3s ease-in-out;
+  z-index: 2;
+}
+#contact .campo .field input, #contact .campo .field textarea, #contact .campo .field select, #contact .campo .field-1 input, #contact .campo .field-1 textarea, #contact .campo .field-1 select {
+  border: var(--black) 1px solid;
+  line-height: 1.5em;
+  padding: 10px;
+  padding-top: 33px;
+  font-size: 16px;
+  color: var(--black);
+  opacity: 50%;
+  outline: none;
+  border-radius: var(--black);
+  position: relative;
+  z-index: 1;
+  top: 5px;
+  transition: border-color 0.3s ease-in-out;
+  width: 95%;
+  align-self: center;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+#contact .campo .field input:focus, #contact .campo .field textarea:focus, #contact .campo .field select:focus, #contact .campo .field-1 input:focus, #contact .campo .field-1 textarea:focus, #contact .campo .field-1 select:focus {
+  border-color: var(--black);
+  opacity: 100%;
+}
+#contact .campo .field input:focus + label, #contact .campo .field textarea:focus + label, #contact .campo .field select:focus + label, #contact .campo .field-1 input:focus + label, #contact .campo .field-1 textarea:focus + label, #contact .campo .field-1 select:focus + label {
+  color: var(--black);
+  opacity: 100%;
+}
+#contact .campo .field-1 input, #contact .campo .field-1 textarea, #contact .campo .field-1 select {
+  height: 200px;
+}
+#contact .campo button {
+  top: 20px;
+  width: 100px;
+  height: 30px;
+}
+#contact .mapa {
+  position: relative;
+  top: 50px;
+  width: 100%;
+  height: 300px;
+}
+#contact p {
+  position: relative;
+  top: 40px;
+  margin-left: 20px;
+  font-size: 25px;
+  align-self: center;
+}
+#contact p b {
+  font-weight: bold;
+}
+#contact button {
+  position: relative;
+  top: 50px;
+  width: 200px;
+  height: 50px;
+}
+#contact button a {
+  font-size: 25px;
+}
+
+@media (min-width: 768px) {
+  #contact img {
+    height: 250px;
+  }
+  #contact h1 {
+    margin-top: 180px;
+    font-size: 45px;
+  }
+  #contact h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  #contact hr {
+    width: 20%;
+    margin-left: 20px;
+  }
+  #contact .campo .field label, #contact .campo .field-1 label {
+    font-size: 20px;
+    left: 30px;
+  }
+  #contact .mapa {
+    height: 350px;
+  }
+  #contact p {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-contact {
+    height: 2000px;
+  }
+
+  #contact img {
+    height: 350px;
+  }
+  #contact h1 {
+    margin-top: 270px;
+  }
+  #contact h2 {
+    font-size: 40px;
+    margin-left: 30px;
+  }
+  #contact hr {
+    width: 20%;
+    margin-left: 30px;
+  }
+  #contact .campo .field label, #contact .campo .field-1 label {
+    font-size: 25px;
+    left: 40px;
+  }
+  #contact .campo button {
+    width: 120px;
+    height: 40px;
+  }
+  #contact .mapa {
+    margin-top: -80px;
+    height: 450px;
+  }
+  #contact p {
+    top: 50px;
+  }
+  #contact button {
+    top: 50px;
+    margin-bottom: 150px;
+  }
+}
+@media (min-width: 1920px) {
+  #contact img {
+    height: 450px;
+  }
+  #contact h1 {
+    font-size: 60px;
+    margin-top: 350px;
+  }
+  #contact h2 {
+    font-size: 45px;
+  }
+  #contact hr {
+    width: 15%;
+  }
+  #contact .campo .field label, #contact .campo .field-1 label {
+    font-size: 30px;
+    left: 60px;
+  }
+  #contact .campo button {
+    width: 120px;
+    height: 40px;
   }
 }
 
