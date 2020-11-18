@@ -141,7 +141,12 @@
             .direita {
                 margin-left: 100px;
             }
-        }  
+        }
+        button {
+            top: 550px;
+            align-self: flex-start;
+            width: 40%;
+        }
     }
 }
 @media (min-width: 375px) {
@@ -225,6 +230,10 @@
                         }
                     }    
                 }
+            }
+            button {
+                top: 950px;
+                width: 25%;
             }
         }
     }
@@ -322,6 +331,10 @@
                         }
                     }    
                 }
+            }
+            button {
+                top: 750px;
+                width: 25%;
             }
         }
     }

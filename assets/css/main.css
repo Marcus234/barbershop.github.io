@@ -422,7 +422,7 @@ body button a {
 }
 
 #footer-calendary {
-  margin-top: 500px;
+  margin-top: 550px;
 }
 
 #footer-error {
@@ -552,7 +552,7 @@ body button a {
   }
 
   #footer-calendary {
-    margin-top: -200px;
+    margin-top: -100px;
   }
 
   #footer-error {
@@ -591,7 +591,7 @@ body button a {
   }
 
   #footer-calendary {
-    margin-top: -100px;
+    margin-top: 0;
   }
 
   #footer nav ul, #footer-services nav ul, #footer-history nav ul, #footer-contact nav ul, #footer-calendary nav ul, #footer-error nav ul {
@@ -1644,6 +1644,11 @@ body button a {
 #calendary #align .calendar .direita {
   margin-left: 100px;
 }
+#calendary #align button {
+  top: 550px;
+  align-self: flex-start;
+  width: 40%;
+}
 
 @media (min-width: 375px) {
   #align .calendar {
@@ -1714,6 +1719,10 @@ body button a {
     font-size: 20px;
     justify-content: center;
     align-items: center;
+  }
+  #calendary #align button {
+    top: 950px;
+    width: 25%;
   }
 }
 @media (min-width: 1200px) {
@@ -1806,6 +1815,10 @@ body button a {
     font-size: 20px;
     justify-content: center;
     align-items: center;
+  }
+  #calendary #align button {
+    top: 750px;
+    width: 25%;
   }
 }
 @media (min-width: 1920px) {
