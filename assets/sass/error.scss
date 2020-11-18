@@ -1,0 +1,91 @@
+#error {
+    flex-direction: column;
+    #erro-black, #erro-white {
+        width: 303px;
+        height: 109px;
+        align-self: center;
+        margin-top: 100px;
+    }
+    .mensagem {
+        align-self: center;
+        width: 87%;
+        position: relative;
+        top: -150px;
+        box-sizing: border-box;
+        border: 1px none solid;
+        flex-direction: column;
+        h2 {
+            align-self: center;
+            font-size: 25px;
+            margin: 0;
+        }
+        small {
+            align-self: flex-start;
+            font-size: 15px;
+        }
+    }
+}
+@media (min-width: 375px) {
+    #error {
+        .mensagem {
+            width: 90%;
+            h2 {
+                font-size: 30px;
+            }
+            small {
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    #error {
+        #erro-black, #erro-white {
+            width: 450px;
+            height: 210px;
+        }
+        .mensagem {
+            width: 51%;
+            h2 {
+                font-size: 35px;
+            }
+            small {
+                font-size: 25px;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    #error {
+        #erro-black, #erro-white {
+            margin-top: 100px;
+            width: 550px;
+            height: 210px;
+        }
+        .mensagem {
+            width: 37%;
+            h2 {
+                font-size: 40px;
+            }
+            small {
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media (min-width: 1920px) {
+    #error {
+        #erro-black, #erro-white {
+            margin-top: 150px;
+        }
+        .mensagem {
+            width: 29%;
+            h2 {
+                font-size: 45px;
+            }
+            small {
+                font-size: 35px;
+            }
+        }
+    }
+}

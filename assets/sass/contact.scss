@@ -17,13 +17,6 @@
         margin: 30px 0 0 10px;
         font-weight: bold;
     }
-    hr {
-        position: relative;
-        margin: 0 0 0 10px;
-        width: 30%;
-        height: 4px;
-        align-self: flex-start;
-    }
     .campo {
         margin-top: 20px;
         flex-direction: column;
@@ -128,10 +121,6 @@
             font-size: 30px;
             margin-left: 20px;
         }
-        hr {
-            width: 20%;
-            margin-left: 20px;
-        }
         .campo {
             .field, .field-1 {
                 label {
@@ -161,10 +150,6 @@
         }
         h2 {
             font-size: 40px;
-            margin-left: 30px;
-        }
-        hr {
-            width: 20%;
             margin-left: 30px;
         }
         .campo {
@@ -206,9 +191,6 @@
         }
         h2 {
             font-size: 45px;
-        }
-        hr {
-            width: 15%;
         }
     }
 }

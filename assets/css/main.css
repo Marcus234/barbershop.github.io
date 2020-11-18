@@ -25,7 +25,6 @@ body {
 }
 body hr {
   background-color: var(--black);
-  border: 0;
 }
 body button {
   border-radius: 10px;
@@ -89,7 +88,10 @@ body button a {
   height: 161px;
   flex-direction: column;
 }
-#header #logo {
+#header #logo-white {
+  display: none;
+}
+#header #logo, #header #logo-white {
   width: 243px;
   height: 243px;
   align-self: center;
@@ -208,7 +210,7 @@ body button a {
   flex-direction: column;
   z-index: 4;
 }
-#header.open-menu #logo {
+#header.open-menu #logo, #header.open-menu #logo-white {
   position: absolute;
   transition: all 1s ease-in-out;
   left: calc(100px - 65px);
@@ -255,7 +257,7 @@ body button a {
 }
 
 @media (min-width: 375px) {
-  #header #logo {
+  #header #logo, #header #logo-white {
     margin-left: 70px;
   }
   #header #menu nav ul {
@@ -267,12 +269,12 @@ body button a {
   #header #menu.logged nav .perfil {
     margin-right: 120px;
   }
-  #header.open-menu #logo {
+  #header.open-menu #logo, #header.open-menu #logo-white {
     left: calc(100px - 60px);
   }
 }
 @media (min-width: 768px) {
-  #header #logo {
+  #header #logo, #header #logo-white {
     position: relative;
     top: -40px;
     margin: 0;
@@ -308,7 +310,7 @@ body button a {
   #header #menu.logged nav .deslogar p {
     font-size: 25px;
   }
-  #header.open-menu #logo {
+  #header.open-menu #logo, #header.open-menu #logo-white {
     left: calc(100px - -300px);
   }
   #header.open-menu #menu {
@@ -328,7 +330,7 @@ body button a {
   #header .btn-close {
     display: none;
   }
-  #header #logo {
+  #header #logo, #header #logo-white {
     position: relative;
     top: -50px;
     margin-left: 20px;
@@ -379,7 +381,7 @@ body button a {
   }
 }
 @media (min-width: 1920px) {
-  #header #logo {
+  #header #logo, #header #logo-white {
     top: -120px;
     margin-left: 50px;
     width: 385px;
@@ -420,7 +422,11 @@ body button a {
 }
 
 #footer-calendary {
-  margin-top: 900px;
+  margin-top: 500px;
+}
+
+#footer-error {
+  margin-top: 60px;
 }
 
 #footer, #footer-services, #footer-history, #footer-contact, #footer-calendary, #footer-error {
@@ -482,6 +488,10 @@ body button a {
     margin-top: 10px;
   }
 
+  #footer-calendary {
+    margin-top: 900px;
+  }
+
   #footer nav, #footer-services nav, #footer-history nav, #footer-contact nav, #footer-calendary nav, #footer-error nav {
     position: absolute;
     display: flex;
@@ -541,6 +551,14 @@ body button a {
     margin-top: -290px;
   }
 
+  #footer-calendary {
+    margin-top: -200px;
+  }
+
+  #footer-error {
+    margin-top: 0;
+  }
+
   #footer, #footer-services, #footer-history, #footer-contact, #footer-calendary, #footer-error {
     position: relative;
   }
@@ -570,6 +588,10 @@ body button a {
 
   #footer-contact {
     margin-top: -290px;
+  }
+
+  #footer-calendary {
+    margin-top: -100px;
   }
 
   #footer nav ul, #footer-services nav ul, #footer-history nav ul, #footer-contact nav ul, #footer-calendary nav ul, #footer-error nav ul {
@@ -1073,6 +1095,7 @@ body button a {
   font-weight: bold;
 }
 #history hr {
+  border: none;
   position: relative;
   margin: 0 0 0 5px;
   width: 70%;
@@ -1311,13 +1334,6 @@ body button a {
   margin: 30px 0 0 10px;
   font-weight: bold;
 }
-#contact hr {
-  position: relative;
-  margin: 0 0 0 10px;
-  width: 30%;
-  height: 4px;
-  align-self: flex-start;
-}
 #contact .campo {
   margin-top: 20px;
   flex-direction: column;
@@ -1419,10 +1435,6 @@ body button a {
     font-size: 30px;
     margin-left: 20px;
   }
-  #contact hr {
-    width: 20%;
-    margin-left: 20px;
-  }
   #contact .campo .field label, #contact .campo .field-1 label {
     font-size: 20px;
     left: 30px;
@@ -1447,10 +1459,6 @@ body button a {
   }
   #contact h2 {
     font-size: 40px;
-    margin-left: 30px;
-  }
-  #contact hr {
-    width: 20%;
     margin-left: 30px;
   }
   #contact .campo .field, #contact .campo .field-1 {
@@ -1490,9 +1498,6 @@ body button a {
   #contact h2 {
     font-size: 45px;
   }
-  #contact hr {
-    width: 15%;
-  }
 }
 #calendary {
   flex-direction: column;
@@ -1522,6 +1527,9 @@ body button a {
   border-radius: 50%;
   width: 20px;
   height: 20px;
+}
+#calendary .opção ul li p {
+  display: none;
 }
 #calendary .opção ul li:hover {
   background-color: var(--black);
@@ -1603,7 +1611,7 @@ body button a {
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(5, 12vw);
   grid-gap: 10px;
-  color: black;
+  color: var(--black);
 }
 #calendary #align .calendar .days li {
   font-size: 16px;
@@ -1710,7 +1718,7 @@ body button a {
 }
 @media (min-width: 1200px) {
   .main-calendary {
-    height: 3200px;
+    height: 1200px;
   }
 
   #calendary .banner-calendary {
@@ -1719,15 +1727,35 @@ body button a {
   #calendary h1 {
     margin-top: 270px;
   }
+  #calendary .opção, #calendary #align {
+    margin-top: -150px;
+  }
+  #calendary .opção {
+    margin-right: 150px;
+    position: relative;
+    top: 300px;
+    align-self: flex-end;
+  }
+  #calendary .opção ul {
+    display: inline;
+  }
   #calendary .opção ul li {
-    width: 40px;
     height: 40px;
     margin-left: 70px;
+    margin-top: 20px;
+  }
+  #calendary .opção ul li p {
+    display: flex;
+    left: 50px;
+    position: relative;
+    font-size: 15px;
+    align-self: center;
   }
   #calendary .opção ul .escolha {
-    font-size: 30px;
+    display: none;
   }
   #calendary #align {
+    width: 80%;
     top: -80px;
   }
   #calendary #align .calendar .day {
@@ -1751,7 +1779,11 @@ body button a {
     font-size: 21px;
     font-weight: bold;
   }
+  #calendary #align .calendar .days {
+    grid-template-rows: none;
+  }
   #calendary #align .calendar .days li {
+    margin-left: 40px;
     font-size: 25px;
     height: 50px;
     width: 50px;
@@ -1774,6 +1806,103 @@ body button a {
     font-size: 20px;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (min-width: 1920px) {
+  .main-calendary {
+    height: 1200px;
+  }
+
+  #calendary .banner-calendary {
+    height: 450px;
+  }
+  #calendary h1 {
+    font-size: 60px;
+    margin-top: 350px;
+  }
+}
+#error {
+  flex-direction: column;
+}
+#error #erro-black, #error #erro-white {
+  width: 303px;
+  height: 109px;
+  align-self: center;
+  margin-top: 100px;
+}
+#error .mensagem {
+  align-self: center;
+  width: 87%;
+  position: relative;
+  top: -150px;
+  box-sizing: border-box;
+  border: 1px none solid;
+  flex-direction: column;
+}
+#error .mensagem h2 {
+  align-self: center;
+  font-size: 25px;
+  margin: 0;
+}
+#error .mensagem small {
+  align-self: flex-start;
+  font-size: 15px;
+}
+
+@media (min-width: 375px) {
+  #error .mensagem {
+    width: 90%;
+  }
+  #error .mensagem h2 {
+    font-size: 30px;
+  }
+  #error .mensagem small {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #error #erro-black, #error #erro-white {
+    width: 450px;
+    height: 210px;
+  }
+  #error .mensagem {
+    width: 51%;
+  }
+  #error .mensagem h2 {
+    font-size: 35px;
+  }
+  #error .mensagem small {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  #error #erro-black, #error #erro-white {
+    margin-top: 100px;
+    width: 550px;
+    height: 210px;
+  }
+  #error .mensagem {
+    width: 37%;
+  }
+  #error .mensagem h2 {
+    font-size: 40px;
+  }
+  #error .mensagem small {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1920px) {
+  #error #erro-black, #error #erro-white {
+    margin-top: 150px;
+  }
+  #error .mensagem {
+    width: 29%;
+  }
+  #error .mensagem h2 {
+    font-size: 45px;
+  }
+  #error .mensagem small {
+    font-size: 35px;
   }
 }
 

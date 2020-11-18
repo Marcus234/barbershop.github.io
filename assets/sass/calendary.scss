@@ -23,6 +23,9 @@
                 border-radius: 50%;
                 width: 20px;
                 height: 20px;
+                p {
+                    display: none;
+                }
                 &:hover {
                     background-color: var(--black);
                 }
@@ -104,7 +107,7 @@
                 grid-template-columns: repeat(7, 1fr);
                 grid-template-rows: repeat(5, 12vw);
                 grid-gap: 10px;
-                color: black;
+                color: var(--black);
                 li {
                     font-size: 16px;
                     justify-content: center;
@@ -228,7 +231,7 @@
 }
 @media (min-width: 1200px) {
     .main-calendary {
-        height: 3200px;
+        height: 1200px;
     }
     #calendary {
         .banner-calendary {
@@ -237,19 +240,35 @@
         h1 {
             margin-top: 270px;
         }
+        .opção, #align {
+            margin-top: -150px;
+        }
         .opção {
+            margin-right: 150px;
+            position: relative;
+            top: 300px;
+            align-self: flex-end;
             ul {
+                display: inline;
                 li {
-                    width: 40px;
                     height: 40px;
                     margin-left: 70px;
+                    margin-top: 20px;
+                    p {
+                        display: flex;
+                        left: 50px;
+                        position: relative;
+                        font-size: 15px;
+                        align-self: center;
+                    }
                 }
                 .escolha {
-                    font-size: 30px;
+                    display: none;
                 }
             }
         }
         #align {
+            width: 80%;
             top: -80px;
             .calendar {
                 .day {
@@ -276,7 +295,9 @@
                     }
                 }
                 .days {
+                    grid-template-rows: none;
                     li {
+                        margin-left: 40px;
                         font-size: 25px;
                         height: 50px;
                         width: 50px;
@@ -302,6 +323,20 @@
                     }    
                 }
             }
+        }
+    }
+}
+@media (min-width: 1920px) {
+    .main-calendary {
+        height: 1200px;
+    }
+    #calendary {
+        .banner-calendary {
+            height: 450px;
+        }
+        h1 {
+            font-size: 60px;
+            margin-top: 350px;
         }
     }
 }

@@ -12,7 +12,10 @@
     margin-top: 100px;
 }
 #footer-calendary {
-    margin-top: 900px;
+    margin-top: 500px;
+}
+#footer-error {
+    margin-top: 60px;
 }
 #footer, #footer-services, #footer-history, #footer-contact, #footer-calendary, #footer-error {
     position: relative;
@@ -71,6 +74,9 @@
     #footer-history {
         margin-top: 10px;
     } 
+    #footer-calendary {
+        margin-top: 900px;
+    }
     #footer, #footer-services, #footer-history, #footer-contact, #footer-calendary, #footer-error {
         nav {
             position: absolute;
@@ -130,6 +136,12 @@
     #footer-contact {
         margin-top: -290px;
     }
+    #footer-calendary {
+        margin-top: -200px;
+    }
+    #footer-error {
+        margin-top: 0;
+    }
     #footer, #footer-services, #footer-history, #footer-contact, #footer-calendary, #footer-error {
         position: relative;
         nav {
@@ -158,6 +170,9 @@
     }
     #footer-contact {
         margin-top: -290px;
+    }
+    #footer-calendary {
+        margin-top: -100px;
     }
     #footer, #footer-services, #footer-history, #footer-contact, #footer-calendary, #footer-error {
         nav {
