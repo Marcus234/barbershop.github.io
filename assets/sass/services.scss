@@ -27,7 +27,7 @@
             width: 50%;
             align-self: center;
             top: -90px;
-            background-color: var(--white);
+            background-color: var(--white-1);
         }
         h2, ul {
             position: absolute;
@@ -43,6 +43,7 @@
             position: relative;
             top: -20px;
             display: inline;
+            color: var(--black);;
             li {
                 margin-top: 20px;
                 font-size: 20px;

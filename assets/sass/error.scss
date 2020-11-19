@@ -1,5 +1,8 @@
 #error {
     flex-direction: column;
+    #error-white {
+        display: none;
+    }
     #erro-black, #erro-white {
         width: 303px;
         height: 109px;
@@ -7,6 +10,7 @@
         margin-top: 100px;
     }
     .mensagem {
+        margin-top: 200px;
         align-self: center;
         width: 87%;
         position: relative;

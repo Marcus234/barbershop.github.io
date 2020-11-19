@@ -1,0 +1,230 @@
+#conta {
+    flex-direction: column;
+    align-self: center;
+    position: relative;
+    top: -40px;
+    #logo-white {
+        display: none;
+    }
+    #contact-login, #contact-password, #contact-register {
+        position: relative;
+        top: -50px;
+        h1 {
+            top: -310px;
+            font-size: 30px;
+            color: var(--black);
+            font-weight: bold;
+            left: 20px;
+        }
+        .campo {
+            margin-top: 20px;
+            flex-direction: column;
+            width: 100%;
+            .fields {
+                flex-direction: column;
+                input {
+                    padding-top: 0;
+                }
+            }
+            .field {
+                position: relative;
+                flex-direction: column;
+                width: 100%;
+                label {
+                    color: var(--black);
+                    opacity: 50%;
+                    font-size: 14px;
+                    position: absolute;
+                    top: 10px;
+                    left: 30px;
+                    transition: color .3s ease-in-out;
+                    z-index: 2;
+                }
+                input, textarea, select {
+                    width: 85%;
+                    height: 50px;
+                }
+            }
+        }
+        button {
+            align-self: flex-start;
+            margin-left: 30px;
+            width: 30%;
+            height: 40px;
+            top: 60px;
+            position: relative;
+            a {
+                font-size: 20px;
+            }
+        }
+        .link {
+            position: relative;
+            top: -30px;
+            text-decoration: none;
+            color: var(--black);
+            align-self: flex-end;
+            margin-bottom: 10px;
+            right: 30px;
+            b {
+                font-weight: bold;
+            }
+        }
+    }
+    #contact-password {
+        button {
+            top: 90px;
+        }
+    }
+}
+@media (min-width: 375px) {
+    #conta {
+        #contact-login, #contact-password, #contact-register {
+            .campo {
+                .field, .field-1 {
+                    label {
+                        left: -10px;
+                        align-self: flex-start;
+                        font-size: 20px;
+                    }
+                    input, textarea, select {
+                        width: 120%;
+                        height: 70px;
+                    }
+                }
+            }
+            button {
+                width: 40%;
+                height: 40px;
+                left: -20px;
+            }
+            .link {
+                left: 20px;
+                font-size: 17px;
+                b {
+                    font-weight: bold;
+                }
+            }
+        }
+        #contact-password {
+            button {
+                top: 110px;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    #conta {
+        #contact-login, #contact-password, #contact-register {
+            .campo {
+                .field, .field-1 {
+                    label {
+                        left: -90px;
+                        align-self: flex-start;
+                        font-size: 20px;
+                    }
+                    input, textarea, select {
+                        width: 180%;
+                        height: 90px;
+                    }
+                }
+            }
+            button {
+                width: 50%;
+                height: 50px;
+                top: 80px;
+                left: -100px;
+                a {
+                    font-size: 30px;
+                }
+            }
+            .link {
+                left: 110px;
+                font-size: 20px;
+                b {
+                    font-weight: bold;
+                }
+            }
+        }
+        #contact-password {
+            button {
+                top: 110px;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    #conta {
+        align-self: center;
+        #contact-login, #contact-password, #contact-register {
+            .campo {
+                .field, .field-1 {
+                    label {
+                        left: -50px;
+                        align-self: flex-start;
+                        font-size: 20px;
+                    }
+                    input, textarea, select {
+                        width: 150%;
+                        height: 70px;
+                        right: 10px;
+                        align-self: center;
+                    }
+                }
+            }
+            button {
+                top: 80px;
+                left: -70px;
+            }
+            .link {
+                left: 60px;
+                font-size: 17px;
+                b {
+                    font-weight: bold;
+                }
+            }
+        }
+        #contact-password {
+            button {
+                top: 110px;
+            }
+        }
+    }
+}
+@media (min-width: 1920px) {
+    #conta {
+        align-self: center;
+        #contact-login, #contact-password, #contact-register {
+            .campo {
+                .field, .field-1 {
+                    label {
+                        left: -100px;
+                        align-self: flex-start;
+                        font-size: 25px;
+                    }
+                    input, textarea, select {
+                        width: 150%;
+                        height: 90px;
+                        right: 10px;
+                        align-self: center;
+                    }
+                }
+            }
+            button {
+                top: 100px;
+                left: -120px;
+            }
+            .link {
+                left: 100px;
+                font-size: 30px;
+                b {
+                    font-weight: bold;
+                }
+            }
+        }
+        #contact-password {
+            button {
+                top: 150px;
+            }
+        }
+    }
+}

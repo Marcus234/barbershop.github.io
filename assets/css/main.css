@@ -19,6 +19,10 @@ h2, h3, h4, h5, h6, small, p {
   color: var(--black);
 }
 
+.login {
+  background-color: var(--white-3);
+}
+
 body {
   margin: 0;
   flex-direction: column;
@@ -60,7 +64,7 @@ body button a {
   }
 
   .main, .main-services, .main-history, .main-contact, .main-calendary, .main-error {
-    background-color: var(--white);
+    background-color: var(--white-3);
     align-self: center;
     position: relative;
     margin: auto 65px;
@@ -82,6 +86,36 @@ body button a {
     font-size: 35px;
   }
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--white-2);
+  }
+  body #header #logo, body #conta #logo {
+    display: none;
+  }
+  body #header #logo-white, body #conta #logo-white {
+    display: flex;
+  }
+  body .main, body .main-services, body .main-history, body .main-contact, body .main-calendary, body .main-error {
+    background-color: var(--white-1);
+  }
+  body h1, body h2, body h3, body h4, body h5, body h6, body small, body p {
+    color: var(--black);
+  }
+  body #header {
+    background-color: var(--white-1);
+  }
+  body #error #erro-black {
+    display: none;
+  }
+  body #error #erro-white {
+    display: flex;
+  }
+
+  .login {
+    background-color: var(--white-1);
+  }
+}
 #header {
   position: relative;
   width: 100%;
@@ -98,7 +132,10 @@ body button a {
   cursor: pointer;
   margin-left: 40px;
 }
-#header .btn-menu {
+#header #btn-menu-white {
+  display: none;
+}
+#header #btn-menu, #header #btn-menu-white {
   width: 42px;
   height: 30px;
   align-self: flex-end;
@@ -195,7 +232,7 @@ body button a {
   margin: 0;
   margin-top: -10px;
 }
-#header .btn-close {
+#header #btn-close, #header #btn-close-white {
   display: none;
 }
 #header.open-menu #overlay {
@@ -221,7 +258,7 @@ body button a {
   display: flex;
   top: 0;
   right: -90px;
-  background-color: var(--white);
+  background-color: var(--white-1);
   z-index: 4;
   height: 100vh;
   width: 115%;
@@ -241,7 +278,10 @@ body button a {
 #header.open-menu #menu nav ul li {
   margin-top: 25px;
 }
-#header.open-menu .btn-close {
+#header.open-menu #menu nav ul .divider {
+  display: none;
+}
+#header.open-menu #btn-close, #header.open-menu #btn-close-white {
   display: flex;
   width: 42px;
   height: 30px;
@@ -250,6 +290,9 @@ body button a {
   margin: 27px 10px 0;
   cursor: pointer;
   z-index: 6;
+}
+#header.open-menu #btn-close-white {
+  display: none;
 }
 #header #btn-open, #header #btn-close {
   position: absolute;
@@ -320,14 +363,14 @@ body button a {
 @media (min-width: 1200px) {
   #header {
     height: 133px;
-    background-color: var(--white);
+    background-color: var(--white-3);
     display: inline;
     flex-direction: row;
   }
-  #header .btn-menu {
+  #header #btn-menu, #header #btn-menu-white {
     display: none;
   }
-  #header .btn-close {
+  #header #btn-close, #header #btn-close-white {
     display: none;
   }
   #header #logo, #header #logo-white {
@@ -353,8 +396,12 @@ body button a {
   #header #menu nav ul li a {
     font-size: 25px;
   }
+  #header #menu nav ul .divider {
+    display: none;
+  }
   #header #menu nav button {
     top: 0;
+    margin-left: 20px;
     width: 177px;
     height: 43px;
   }
@@ -433,7 +480,7 @@ body button a {
   position: relative;
   width: 100%;
   height: 291px;
-  background-color: var(--black);
+  background-color: var(--black-1);
   bottom: 0;
   flex-direction: column;
   align-items: center;
@@ -480,7 +527,7 @@ body button a {
 #footer p, #footer-services p, #footer-history p, #footer-contact p, #footer-calendary p, #footer-error p {
   position: relative;
   top: -60px;
-  color: var(--white);
+  color: var(--white-3);
 }
 
 @media (min-width: 768px) {
@@ -500,13 +547,13 @@ body button a {
   #footer nav ul, #footer-services nav ul, #footer-history nav ul, #footer-contact nav ul, #footer-calendary nav ul, #footer-error nav ul {
     font-weight: bold;
     display: inline;
-    color: var(--white);
+    color: var(--white-3);
     align-self: flex-start;
     font-size: 25px;
   }
   #footer nav ul li a, #footer-services nav ul li a, #footer-history nav ul li a, #footer-contact nav ul li a, #footer-calendary nav ul li a, #footer-error nav ul li a {
     font-size: 20px;
-    color: var(--white);
+    color: var(--white-3);
     text-decoration: none;
   }
   #footer #socials, #footer-services #socials, #footer-history #socials, #footer-contact #socials, #footer-calendary #socials, #footer-error #socials {
@@ -523,6 +570,7 @@ body button a {
     margin-top: 10px;
   }
   #footer #socials p, #footer-services #socials p, #footer-history #socials p, #footer-contact #socials p, #footer-calendary #socials p, #footer-error #socials p {
+    color: var(--white-3);
     top: 0;
     display: flex;
   }
@@ -603,7 +651,10 @@ body button a {
 }
 :root {
   --white: #FFF;
+  --white-1: #FFF;
+  --white-3: #FFF;
   --black: #000;
+  --black-1: #000;
   --gray-1: #DFE4EA;
   --gray-2: #D2DAE2;
   --gray-3: rgb(	223, 228,234, 0.5);
@@ -612,6 +663,22 @@ body button a {
   --gray-6: #707070;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --white: #000;
+    --white-1: #636E72;
+    --white-2: rgb(47,54,64, 0.9);
+    --white-3: #FFF;
+    --black: #FFF;
+    --black-1:#2D3436;
+    --gray-1: #DFE4EA;
+    --gray-2: rgb(210, 218, 226, 0.5);
+    --gray-3: rgb(223, 228, 234, 0.5);
+    --gray-4: #DFE6E9;
+    --gray-5: #9A9A99;
+    --gray-6: #707070;
+  }
+}
 #home {
   flex-direction: column;
 }
@@ -627,11 +694,11 @@ body button a {
 }
 #home .title h1 {
   font-weight: bold;
-  color: var(--white);
+  color: var(--white-3);
   margin: 0;
 }
 #home .title small {
-  color: var(--white);
+  color: var(--white-3);
 }
 #home section {
   flex-direction: column;
@@ -708,7 +775,7 @@ body button a {
   font-size: 15px;
 }
 #home section .home-local {
-  background-color: var(--white);
+  background-color: var(--white-1);
   flex-direction: row-reverse;
 }
 #home section .home-local img {
@@ -918,7 +985,7 @@ body button a {
   width: 50%;
   align-self: center;
   top: -90px;
-  background-color: var(--white);
+  background-color: var(--white-1);
 }
 #services .serviços-1 h2, #services .serviços-1 ul, #services .serviços-2 h2, #services .serviços-2 ul, #services .serviços-3 h2, #services .serviços-3 ul, #services .serviços-4 h2, #services .serviços-4 ul, #services .serviços-5 h2, #services .serviços-5 ul, #services .serviços-6 h2, #services .serviços-6 ul {
   position: absolute;
@@ -934,6 +1001,7 @@ body button a {
   position: relative;
   top: -20px;
   display: inline;
+  color: var(--black);
 }
 #services .serviços-1 ul li, #services .serviços-2 ul li, #services .serviços-3 ul li, #services .serviços-4 ul li, #services .serviços-5 ul li, #services .serviços-6 ul li {
   margin-top: 20px;
@@ -1123,7 +1191,7 @@ body button a {
   flex-direction: column;
 }
 #history .comentários .comentário-1, #history .comentários .comentário-2 {
-  background-color: var(--gray-4);
+  background-color: var(--gray-2);
 }
 #history .comentários .comentário-1 img, #history .comentários .comentário-2 img {
   position: relative;
@@ -1155,7 +1223,7 @@ body button a {
   font-size: 15px;
 }
 #history .comentários .comentário-2 {
-  background-color: var(--white);
+  background-color: var(--white-1);
 }
 #history .comentários .comentário-2 .coment hr {
   width: 70%;
@@ -1314,43 +1382,43 @@ body button a {
     top: 150px;
   }
 }
-#contact {
+#contact, #contact-login, #contact-password, #contact-register {
   flex-direction: column;
 }
-#contact img {
+#contact img, #contact-login img, #contact-password img, #contact-register img {
   width: 100%;
   height: 145px;
 }
-#contact h1 {
+#contact h1, #contact-login h1, #contact-password h1, #contact-register h1 {
   position: absolute;
   margin-left: 10px;
   margin-top: 100px;
   font-size: 30px;
   font-weight: bold;
 }
-#contact h2 {
+#contact h2, #contact-login h2, #contact-password h2, #contact-register h2 {
   font-size: 20px;
   margin-left: 10px;
   margin: 30px 0 0 10px;
   font-weight: bold;
 }
-#contact .campo {
+#contact .campo, #contact-login .campo, #contact-password .campo, #contact-register .campo {
   margin-top: 20px;
   flex-direction: column;
   width: 100%;
 }
-#contact .campo .fields {
+#contact .campo .fields, #contact-login .campo .fields, #contact-password .campo .fields, #contact-register .campo .fields {
   flex-direction: column;
 }
-#contact .campo .fields input {
+#contact .campo .fields input, #contact-login .campo .fields input, #contact-password .campo .fields input, #contact-register .campo .fields input {
   padding-top: 0;
 }
-#contact .campo .field, #contact .campo .field-1 {
+#contact .campo .field, #contact .campo .field-1, #contact-login .campo .field, #contact-login .campo .field-1, #contact-password .campo .field, #contact-password .campo .field-1, #contact-register .campo .field, #contact-register .campo .field-1 {
   position: relative;
   flex-direction: column;
   width: 100%;
 }
-#contact .campo .field label, #contact .campo .field-1 label {
+#contact .campo .field label, #contact .campo .field-1 label, #contact-login .campo .field label, #contact-login .campo .field-1 label, #contact-password .campo .field label, #contact-password .campo .field-1 label, #contact-register .campo .field label, #contact-register .campo .field-1 label {
   color: var(--black);
   opacity: 50%;
   font-size: 14px;
@@ -1360,7 +1428,7 @@ body button a {
   transition: color 0.3s ease-in-out;
   z-index: 2;
 }
-#contact .campo .field input, #contact .campo .field textarea, #contact .campo .field select, #contact .campo .field-1 input, #contact .campo .field-1 textarea, #contact .campo .field-1 select {
+#contact .campo .field input, #contact .campo .field textarea, #contact .campo .field select, #contact .campo .field-1 input, #contact .campo .field-1 textarea, #contact .campo .field-1 select, #contact-login .campo .field input, #contact-login .campo .field textarea, #contact-login .campo .field select, #contact-login .campo .field-1 input, #contact-login .campo .field-1 textarea, #contact-login .campo .field-1 select, #contact-password .campo .field input, #contact-password .campo .field textarea, #contact-password .campo .field select, #contact-password .campo .field-1 input, #contact-password .campo .field-1 textarea, #contact-password .campo .field-1 select, #contact-register .campo .field input, #contact-register .campo .field textarea, #contact-register .campo .field select, #contact-register .campo .field-1 input, #contact-register .campo .field-1 textarea, #contact-register .campo .field-1 select {
   border: var(--black) 1px solid;
   line-height: 1.5em;
   padding: 10px;
@@ -1380,69 +1448,69 @@ body button a {
   border-radius: 10px;
   margin-bottom: 10px;
 }
-#contact .campo .field input:focus, #contact .campo .field textarea:focus, #contact .campo .field select:focus, #contact .campo .field-1 input:focus, #contact .campo .field-1 textarea:focus, #contact .campo .field-1 select:focus {
+#contact .campo .field input:focus, #contact .campo .field textarea:focus, #contact .campo .field select:focus, #contact .campo .field-1 input:focus, #contact .campo .field-1 textarea:focus, #contact .campo .field-1 select:focus, #contact-login .campo .field input:focus, #contact-login .campo .field textarea:focus, #contact-login .campo .field select:focus, #contact-login .campo .field-1 input:focus, #contact-login .campo .field-1 textarea:focus, #contact-login .campo .field-1 select:focus, #contact-password .campo .field input:focus, #contact-password .campo .field textarea:focus, #contact-password .campo .field select:focus, #contact-password .campo .field-1 input:focus, #contact-password .campo .field-1 textarea:focus, #contact-password .campo .field-1 select:focus, #contact-register .campo .field input:focus, #contact-register .campo .field textarea:focus, #contact-register .campo .field select:focus, #contact-register .campo .field-1 input:focus, #contact-register .campo .field-1 textarea:focus, #contact-register .campo .field-1 select:focus {
   border-color: var(--black);
   opacity: 100%;
 }
-#contact .campo .field input:focus + label, #contact .campo .field textarea:focus + label, #contact .campo .field select:focus + label, #contact .campo .field-1 input:focus + label, #contact .campo .field-1 textarea:focus + label, #contact .campo .field-1 select:focus + label {
+#contact .campo .field input:focus + label, #contact .campo .field textarea:focus + label, #contact .campo .field select:focus + label, #contact .campo .field-1 input:focus + label, #contact .campo .field-1 textarea:focus + label, #contact .campo .field-1 select:focus + label, #contact-login .campo .field input:focus + label, #contact-login .campo .field textarea:focus + label, #contact-login .campo .field select:focus + label, #contact-login .campo .field-1 input:focus + label, #contact-login .campo .field-1 textarea:focus + label, #contact-login .campo .field-1 select:focus + label, #contact-password .campo .field input:focus + label, #contact-password .campo .field textarea:focus + label, #contact-password .campo .field select:focus + label, #contact-password .campo .field-1 input:focus + label, #contact-password .campo .field-1 textarea:focus + label, #contact-password .campo .field-1 select:focus + label, #contact-register .campo .field input:focus + label, #contact-register .campo .field textarea:focus + label, #contact-register .campo .field select:focus + label, #contact-register .campo .field-1 input:focus + label, #contact-register .campo .field-1 textarea:focus + label, #contact-register .campo .field-1 select:focus + label {
   color: var(--black);
   opacity: 100%;
 }
-#contact .campo .field-1 input, #contact .campo .field-1 textarea, #contact .campo .field-1 select {
+#contact .campo .field-1 input, #contact .campo .field-1 textarea, #contact .campo .field-1 select, #contact-login .campo .field-1 input, #contact-login .campo .field-1 textarea, #contact-login .campo .field-1 select, #contact-password .campo .field-1 input, #contact-password .campo .field-1 textarea, #contact-password .campo .field-1 select, #contact-register .campo .field-1 input, #contact-register .campo .field-1 textarea, #contact-register .campo .field-1 select {
   height: 200px;
 }
-#contact .campo button {
+#contact .campo button, #contact-login .campo button, #contact-password .campo button, #contact-register .campo button {
   top: 20px;
   width: 100px;
   height: 30px;
 }
-#contact .mapa {
+#contact .mapa, #contact-login .mapa, #contact-password .mapa, #contact-register .mapa {
   position: relative;
   top: 50px;
   width: 100%;
   height: 300px;
 }
-#contact p {
+#contact p, #contact-login p, #contact-password p, #contact-register p {
   position: relative;
   top: 40px;
   margin-left: 20px;
   font-size: 25px;
   align-self: center;
 }
-#contact p b {
+#contact p b, #contact-login p b, #contact-password p b, #contact-register p b {
   font-weight: bold;
 }
-#contact button {
+#contact button, #contact-login button, #contact-password button, #contact-register button {
   position: relative;
   top: 50px;
   width: 200px;
   height: 50px;
 }
-#contact button a {
+#contact button a, #contact-login button a, #contact-password button a, #contact-register button a {
   font-size: 25px;
 }
 
 @media (min-width: 768px) {
-  #contact img {
+  #contact img, #contact-login img, #contact-password img, #contact-register img {
     height: 250px;
   }
-  #contact h1 {
+  #contact h1, #contact-login h1, #contact-password h1, #contact-register h1 {
     margin-top: 180px;
     font-size: 45px;
   }
-  #contact h2 {
+  #contact h2, #contact-login h2, #contact-password h2, #contact-register h2 {
     margin-top: 20px;
     font-size: 30px;
     margin-left: 20px;
   }
-  #contact .campo .field label, #contact .campo .field-1 label {
+  #contact .campo .field label, #contact .campo .field-1 label, #contact-login .campo .field label, #contact-login .campo .field-1 label, #contact-password .campo .field label, #contact-password .campo .field-1 label, #contact-register .campo .field label, #contact-register .campo .field-1 label {
     font-size: 20px;
     left: 30px;
   }
-  #contact .mapa {
+  #contact .mapa, #contact-login .mapa, #contact-password .mapa, #contact-register .mapa {
     height: 450px;
   }
-  #contact p {
+  #contact p, #contact-login p, #contact-password p, #contact-register p {
     font-size: 30px;
   }
 }
@@ -1451,35 +1519,35 @@ body button a {
     height: 1400px;
   }
 
-  #contact img {
+  #contact img, #contact-login img, #contact-password img, #contact-register img {
     height: 350px;
   }
-  #contact h1 {
+  #contact h1, #contact-login h1, #contact-password h1, #contact-register h1 {
     margin-top: 270px;
   }
-  #contact h2 {
+  #contact h2, #contact-login h2, #contact-password h2, #contact-register h2 {
     font-size: 40px;
     margin-left: 30px;
   }
-  #contact .campo .field, #contact .campo .field-1 {
+  #contact .campo .field, #contact .campo .field-1, #contact-login .campo .field, #contact-login .campo .field-1, #contact-password .campo .field, #contact-password .campo .field-1, #contact-register .campo .field, #contact-register .campo .field-1 {
     align-self: flex-start;
   }
-  #contact .campo .field input, #contact .campo .field textarea, #contact .campo .field select, #contact .campo .field-1 input, #contact .campo .field-1 textarea, #contact .campo .field-1 select {
+  #contact .campo .field input, #contact .campo .field textarea, #contact .campo .field select, #contact .campo .field-1 input, #contact .campo .field-1 textarea, #contact .campo .field-1 select, #contact-login .campo .field input, #contact-login .campo .field textarea, #contact-login .campo .field select, #contact-login .campo .field-1 input, #contact-login .campo .field-1 textarea, #contact-login .campo .field-1 select, #contact-password .campo .field input, #contact-password .campo .field textarea, #contact-password .campo .field select, #contact-password .campo .field-1 input, #contact-password .campo .field-1 textarea, #contact-password .campo .field-1 select, #contact-register .campo .field input, #contact-register .campo .field textarea, #contact-register .campo .field select, #contact-register .campo .field-1 input, #contact-register .campo .field-1 textarea, #contact-register .campo .field-1 select {
     width: 40%;
     margin-left: 20px;
     align-self: flex-start;
   }
-  #contact .campo button {
+  #contact .campo button, #contact-login .campo button, #contact-password .campo button, #contact-register .campo button {
     align-self: flex-start;
     margin-left: 20px;
     height: 40px;
   }
-  #contact .mapa {
+  #contact .mapa, #contact-login .mapa, #contact-password .mapa, #contact-register .mapa {
     top: -450px;
     align-self: flex-end;
     width: 55%;
   }
-  #contact p, #contact button {
+  #contact p, #contact button, #contact-login p, #contact-login button, #contact-password p, #contact-password button, #contact-register p, #contact-register button {
     top: -390px;
   }
 }
@@ -1488,14 +1556,14 @@ body button a {
     height: 1500px;
   }
 
-  #contact img {
+  #contact img, #contact-login img, #contact-password img, #contact-register img {
     height: 450px;
   }
-  #contact h1 {
+  #contact h1, #contact-login h1, #contact-password h1, #contact-register h1 {
     font-size: 60px;
     margin-top: 350px;
   }
-  #contact h2 {
+  #contact h2, #contact-login h2, #contact-password h2, #contact-register h2 {
     font-size: 45px;
   }
 }
@@ -1837,6 +1905,9 @@ body button a {
 #error {
   flex-direction: column;
 }
+#error #error-white {
+  display: none;
+}
 #error #erro-black, #error #erro-white {
   width: 303px;
   height: 109px;
@@ -1844,6 +1915,7 @@ body button a {
   margin-top: 100px;
 }
 #error .mensagem {
+  margin-top: 200px;
   align-self: center;
   width: 87%;
   position: relative;
@@ -1916,6 +1988,199 @@ body button a {
   }
   #error .mensagem small {
     font-size: 35px;
+  }
+}
+#conta {
+  flex-direction: column;
+  align-self: center;
+  position: relative;
+  top: -40px;
+}
+#conta #logo-white {
+  display: none;
+}
+#conta #contact-login, #conta #contact-password, #conta #contact-register {
+  position: relative;
+  top: -50px;
+}
+#conta #contact-login h1, #conta #contact-password h1, #conta #contact-register h1 {
+  top: -310px;
+  font-size: 30px;
+  color: var(--black);
+  font-weight: bold;
+  left: 20px;
+}
+#conta #contact-login .campo, #conta #contact-password .campo, #conta #contact-register .campo {
+  margin-top: 20px;
+  flex-direction: column;
+  width: 100%;
+}
+#conta #contact-login .campo .fields, #conta #contact-password .campo .fields, #conta #contact-register .campo .fields {
+  flex-direction: column;
+}
+#conta #contact-login .campo .fields input, #conta #contact-password .campo .fields input, #conta #contact-register .campo .fields input {
+  padding-top: 0;
+}
+#conta #contact-login .campo .field, #conta #contact-password .campo .field, #conta #contact-register .campo .field {
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+}
+#conta #contact-login .campo .field label, #conta #contact-password .campo .field label, #conta #contact-register .campo .field label {
+  color: var(--black);
+  opacity: 50%;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  transition: color 0.3s ease-in-out;
+  z-index: 2;
+}
+#conta #contact-login .campo .field input, #conta #contact-login .campo .field textarea, #conta #contact-login .campo .field select, #conta #contact-password .campo .field input, #conta #contact-password .campo .field textarea, #conta #contact-password .campo .field select, #conta #contact-register .campo .field input, #conta #contact-register .campo .field textarea, #conta #contact-register .campo .field select {
+  width: 85%;
+  height: 50px;
+}
+#conta #contact-login button, #conta #contact-password button, #conta #contact-register button {
+  align-self: flex-start;
+  margin-left: 30px;
+  width: 30%;
+  height: 40px;
+  top: 60px;
+  position: relative;
+}
+#conta #contact-login button a, #conta #contact-password button a, #conta #contact-register button a {
+  font-size: 20px;
+}
+#conta #contact-login .link, #conta #contact-password .link, #conta #contact-register .link {
+  position: relative;
+  top: -30px;
+  text-decoration: none;
+  color: var(--black);
+  align-self: flex-end;
+  margin-bottom: 10px;
+  right: 30px;
+}
+#conta #contact-login .link b, #conta #contact-password .link b, #conta #contact-register .link b {
+  font-weight: bold;
+}
+#conta #contact-password button {
+  top: 90px;
+}
+
+@media (min-width: 375px) {
+  #conta #contact-login .campo .field label, #conta #contact-login .campo .field-1 label, #conta #contact-password .campo .field label, #conta #contact-password .campo .field-1 label, #conta #contact-register .campo .field label, #conta #contact-register .campo .field-1 label {
+    left: -10px;
+    align-self: flex-start;
+    font-size: 20px;
+  }
+  #conta #contact-login .campo .field input, #conta #contact-login .campo .field textarea, #conta #contact-login .campo .field select, #conta #contact-login .campo .field-1 input, #conta #contact-login .campo .field-1 textarea, #conta #contact-login .campo .field-1 select, #conta #contact-password .campo .field input, #conta #contact-password .campo .field textarea, #conta #contact-password .campo .field select, #conta #contact-password .campo .field-1 input, #conta #contact-password .campo .field-1 textarea, #conta #contact-password .campo .field-1 select, #conta #contact-register .campo .field input, #conta #contact-register .campo .field textarea, #conta #contact-register .campo .field select, #conta #contact-register .campo .field-1 input, #conta #contact-register .campo .field-1 textarea, #conta #contact-register .campo .field-1 select {
+    width: 120%;
+    height: 70px;
+  }
+  #conta #contact-login button, #conta #contact-password button, #conta #contact-register button {
+    width: 40%;
+    height: 40px;
+    left: -20px;
+  }
+  #conta #contact-login .link, #conta #contact-password .link, #conta #contact-register .link {
+    left: 20px;
+    font-size: 17px;
+  }
+  #conta #contact-login .link b, #conta #contact-password .link b, #conta #contact-register .link b {
+    font-weight: bold;
+  }
+  #conta #contact-password button {
+    top: 110px;
+  }
+}
+@media (min-width: 768px) {
+  #conta #contact-login .campo .field label, #conta #contact-login .campo .field-1 label, #conta #contact-password .campo .field label, #conta #contact-password .campo .field-1 label, #conta #contact-register .campo .field label, #conta #contact-register .campo .field-1 label {
+    left: -90px;
+    align-self: flex-start;
+    font-size: 20px;
+  }
+  #conta #contact-login .campo .field input, #conta #contact-login .campo .field textarea, #conta #contact-login .campo .field select, #conta #contact-login .campo .field-1 input, #conta #contact-login .campo .field-1 textarea, #conta #contact-login .campo .field-1 select, #conta #contact-password .campo .field input, #conta #contact-password .campo .field textarea, #conta #contact-password .campo .field select, #conta #contact-password .campo .field-1 input, #conta #contact-password .campo .field-1 textarea, #conta #contact-password .campo .field-1 select, #conta #contact-register .campo .field input, #conta #contact-register .campo .field textarea, #conta #contact-register .campo .field select, #conta #contact-register .campo .field-1 input, #conta #contact-register .campo .field-1 textarea, #conta #contact-register .campo .field-1 select {
+    width: 180%;
+    height: 90px;
+  }
+  #conta #contact-login button, #conta #contact-password button, #conta #contact-register button {
+    width: 50%;
+    height: 50px;
+    top: 80px;
+    left: -100px;
+  }
+  #conta #contact-login button a, #conta #contact-password button a, #conta #contact-register button a {
+    font-size: 30px;
+  }
+  #conta #contact-login .link, #conta #contact-password .link, #conta #contact-register .link {
+    left: 110px;
+    font-size: 20px;
+  }
+  #conta #contact-login .link b, #conta #contact-password .link b, #conta #contact-register .link b {
+    font-weight: bold;
+  }
+  #conta #contact-password button {
+    top: 110px;
+  }
+}
+@media (min-width: 1200px) {
+  #conta {
+    align-self: center;
+  }
+  #conta #contact-login .campo .field label, #conta #contact-login .campo .field-1 label, #conta #contact-password .campo .field label, #conta #contact-password .campo .field-1 label, #conta #contact-register .campo .field label, #conta #contact-register .campo .field-1 label {
+    left: -50px;
+    align-self: flex-start;
+    font-size: 20px;
+  }
+  #conta #contact-login .campo .field input, #conta #contact-login .campo .field textarea, #conta #contact-login .campo .field select, #conta #contact-login .campo .field-1 input, #conta #contact-login .campo .field-1 textarea, #conta #contact-login .campo .field-1 select, #conta #contact-password .campo .field input, #conta #contact-password .campo .field textarea, #conta #contact-password .campo .field select, #conta #contact-password .campo .field-1 input, #conta #contact-password .campo .field-1 textarea, #conta #contact-password .campo .field-1 select, #conta #contact-register .campo .field input, #conta #contact-register .campo .field textarea, #conta #contact-register .campo .field select, #conta #contact-register .campo .field-1 input, #conta #contact-register .campo .field-1 textarea, #conta #contact-register .campo .field-1 select {
+    width: 150%;
+    height: 70px;
+    right: 10px;
+    align-self: center;
+  }
+  #conta #contact-login button, #conta #contact-password button, #conta #contact-register button {
+    top: 80px;
+    left: -70px;
+  }
+  #conta #contact-login .link, #conta #contact-password .link, #conta #contact-register .link {
+    left: 60px;
+    font-size: 17px;
+  }
+  #conta #contact-login .link b, #conta #contact-password .link b, #conta #contact-register .link b {
+    font-weight: bold;
+  }
+  #conta #contact-password button {
+    top: 110px;
+  }
+}
+@media (min-width: 1920px) {
+  #conta {
+    align-self: center;
+  }
+  #conta #contact-login .campo .field label, #conta #contact-login .campo .field-1 label, #conta #contact-password .campo .field label, #conta #contact-password .campo .field-1 label, #conta #contact-register .campo .field label, #conta #contact-register .campo .field-1 label {
+    left: -100px;
+    align-self: flex-start;
+    font-size: 25px;
+  }
+  #conta #contact-login .campo .field input, #conta #contact-login .campo .field textarea, #conta #contact-login .campo .field select, #conta #contact-login .campo .field-1 input, #conta #contact-login .campo .field-1 textarea, #conta #contact-login .campo .field-1 select, #conta #contact-password .campo .field input, #conta #contact-password .campo .field textarea, #conta #contact-password .campo .field select, #conta #contact-password .campo .field-1 input, #conta #contact-password .campo .field-1 textarea, #conta #contact-password .campo .field-1 select, #conta #contact-register .campo .field input, #conta #contact-register .campo .field textarea, #conta #contact-register .campo .field select, #conta #contact-register .campo .field-1 input, #conta #contact-register .campo .field-1 textarea, #conta #contact-register .campo .field-1 select {
+    width: 150%;
+    height: 90px;
+    right: 10px;
+    align-self: center;
+  }
+  #conta #contact-login button, #conta #contact-password button, #conta #contact-register button {
+    top: 100px;
+    left: -120px;
+  }
+  #conta #contact-login .link, #conta #contact-password .link, #conta #contact-register .link {
+    left: 100px;
+    font-size: 30px;
+  }
+  #conta #contact-login .link b, #conta #contact-password .link b, #conta #contact-register .link b {
+    font-weight: bold;
+  }
+  #conta #contact-password button {
+    top: 150px;
   }
 }
 

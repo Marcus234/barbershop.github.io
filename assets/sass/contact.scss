@@ -1,4 +1,4 @@
-#contact {
+#contact, #contact-login, #contact-password, #contact-register {
     flex-direction: column;
     img {
         width: 100%;
@@ -108,7 +108,7 @@
     }
 }
 @media (min-width:768px) {
-    #contact {
+    #contact, #contact-login, #contact-password, #contact-register {
         img {
             height: 250px;
         }
@@ -141,7 +141,7 @@
     .main-contact {
         height: 1400px;
     }
-    #contact {
+    #contact, #contact-login, #contact-password, #contact-register {
         img {
             height: 350px;
         }
@@ -181,7 +181,7 @@
     .main-contact {
         height: 1500px;
     }
-    #contact {
+    #contact, #contact-login, #contact-password, #contact-register {
         img {
             height: 450px;
         }

@@ -21,7 +21,7 @@
     position: relative;
     width: 100%;
     height: 291px;
-    background-color: var(--black);
+    background-color: var(--black-1);
     bottom: 0;
     flex-direction: column;
     align-items: center;
@@ -67,7 +67,7 @@
     p {
         position: relative;
         top: -60px;
-        color: var(--white);
+        color: var(--white-3);
     }
 }
 @media (min-width: 768px) {
@@ -85,13 +85,13 @@
             ul {
                 font-weight: bold;
                 display: inline;
-                color: var(--white);
+                color: var(--white-3);
                 align-self: flex-start;
                 font-size: 25px;
                 li {
                     a {
                         font-size: 20px;
-                        color: var(--white);
+                        color: var(--white-3);
                         text-decoration: none;
                     }
                 }
@@ -110,6 +110,7 @@
                 margin-top: 10px;
             }
             p {
+                color: var(--white-3);
                 top: 0;
                 display: flex;
             }

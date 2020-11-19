@@ -13,7 +13,10 @@
         cursor: pointer;
         margin-left: 40px;
     }
-    .btn-menu {
+    #btn-menu-white {
+        display: none;
+    }
+    #btn-menu, #btn-menu-white {
         width: 42px;
         height: 30px;
         align-self: flex-end;
@@ -117,7 +120,7 @@
             }
         }
     }
-    .btn-close {
+    #btn-close, #btn-close-white {
         display: none;
     }
     &.open-menu {
@@ -144,7 +147,7 @@
             display: flex;
             top: 0;
             right: -90px;
-            background-color: var(--white);
+            background-color: var(--white-1);
             z-index: 4;
             height: 100vh;
             width: 115%;
@@ -161,9 +164,13 @@
                     li {
                         margin-top: 25px;
                     }
+                    .divider {
+                        display: none;
+                    }
                 }
             }
-        }.btn-close {
+        }
+        #btn-close, #btn-close-white {
             display: flex;
             width: 42px;
             height: 30px;
@@ -172,6 +179,9 @@
             margin: 27px 10px 0;
             cursor: pointer;
             z-index: 6; 
+        }
+        #btn-close-white {
+            display: none;
         }
     }
     #btn-open, #btn-close {
@@ -277,13 +287,13 @@
 @media (min-width: 1200px) {
     #header {
         height: 133px;
-        background-color: var(--white);
+        background-color: var(--white-3);
         display: inline;
         flex-direction: row;
-        .btn-menu {
+        #btn-menu, #btn-menu-white {
             display: none;
         }
-        .btn-close {
+        #btn-close, #btn-close-white {
             display: none;
         }
         #logo, #logo-white {
@@ -308,9 +318,13 @@
                             font-size: 25px;
                         }
                     }
+                    .divider {
+                        display: none;
+                    }
                 }
                 button {
                     top: 0;
+                    margin-left: 20px;
                     width: 177px;
                     height: 43px;
                 }

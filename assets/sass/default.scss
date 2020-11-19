@@ -17,6 +17,10 @@ h2, h3, h4, h5, h6, small, p {
     color: var(--black);
 }
 
+.login {
+    background-color: var(--white-3);
+}
+
 body {
     margin: 0;
     flex-direction: column;
@@ -58,7 +62,7 @@ body {
         background-color: var(--gray-3);
     }
     .main, .main-services, .main-history, .main-contact, .main-calendary, .main-error {
-        background-color: var(--white);
+        background-color: var(--white-3);
         align-self: center;
         position: relative;
         margin: auto 65px;
@@ -79,5 +83,39 @@ body {
                 font-size: 35px;
             }
         }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--white-2);
+        #header, #conta {
+            #logo {
+                display: none;
+            }
+            #logo-white {
+                display: flex;
+            }
+        }
+        .main, .main-services, .main-history, .main-contact, .main-calendary, .main-error {
+            background-color: var(--white-1);
+        }
+        h1, h2, h3, h4, h5, h6, small, p {
+            color: var(--black);
+        }
+        #header {
+            background-color: var(--white-1);
+        }
+        #error {
+            #erro-black {
+                display: none;
+            }
+            #erro-white {
+                display: flex;
+            }
+        }
+    }
+    .login {
+        background-color: var(--white-1);
     }
 }
