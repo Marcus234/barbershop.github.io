@@ -26,6 +26,7 @@ h2, h3, h4, h5, h6, small, p {
 body {
   margin: 0;
   flex-direction: column;
+  background-color: var(--white-1);
 }
 body hr {
   background-color: var(--black);
@@ -86,10 +87,12 @@ body button a {
     font-size: 35px;
   }
 }
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) and (min-width: 1200px) {
   body {
     background-color: var(--white-2);
   }
+}
+@media (prefers-color-scheme: dark) {
   body #header #logo, body #conta #logo {
     display: none;
   }
@@ -111,7 +114,17 @@ body button a {
   body #error #erro-white {
     display: flex;
   }
-
+  body #calendary .opção ul li {
+    color: var(--black);
+  }
+  body #calendary #align .calendar .esquerda #left-black, body #calendary #align .calendar .esquerda #right-black, body #calendary #align .calendar .direita #left-black, body #calendary #align .calendar .direita #right-black {
+    display: none;
+  }
+  body #calendary #align .calendar .esquerda #left-white, body #calendary #align .calendar .esquerda #right-white, body #calendary #align .calendar .direita #left-white, body #calendary #align .calendar .direita #right-white {
+    display: flex;
+  }
+}
+@media (prefers-color-scheme: dark) {
   .login {
     background-color: var(--white-1);
   }
@@ -673,10 +686,10 @@ body button a {
     --black-1:#2D3436;
     --gray-1: #DFE4EA;
     --gray-2: rgb(210, 218, 226, 0.5);
-    --gray-3: rgb(223, 228, 234, 0.5);
+    --gray-3: #636E72;
     --gray-4: #DFE6E9;
-    --gray-5: #9A9A99;
-    --gray-6: #707070;
+    --gray-5: #FFF;
+    --gray-6: #FFF;
   }
 }
 #home {
@@ -1591,7 +1604,7 @@ body button a {
 }
 #calendary .opção ul li {
   margin-left: 15px;
-  border: 1px var(--gray-6) solid;
+  border: 1px var(--black) solid;
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -1705,6 +1718,12 @@ body button a {
   flex-direction: row;
   display: inline;
   width: 50px;
+}
+#calendary #align .calendar .esquerda #left-black, #calendary #align .calendar .esquerda #right-black, #calendary #align .calendar .direita #left-black, #calendary #align .calendar .direita #right-black {
+  display: flex;
+}
+#calendary #align .calendar .esquerda #left-white, #calendary #align .calendar .esquerda #right-white, #calendary #align .calendar .direita #left-white, #calendary #align .calendar .direita #right-white {
+  display: none;
 }
 #calendary #align .calendar .esquerda {
   margin-right: 100px;

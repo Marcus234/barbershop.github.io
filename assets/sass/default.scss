@@ -24,6 +24,7 @@ h2, h3, h4, h5, h6, small, p {
 body {
     margin: 0;
     flex-direction: column;
+    background-color: var(--white-1);
     hr {
         background-color: var(--black);
     }
@@ -87,8 +88,12 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
+    @media (min-width: 1200px) {
+        body {
+            background-color: var(--white-2);
+        }
+    }
     body {
-        background-color: var(--white-2);
         #header, #conta {
             #logo {
                 display: none;
@@ -112,6 +117,27 @@ body {
             }
             #erro-white {
                 display: flex;
+            }
+        }
+        #calendary {
+            .opção {
+                ul {
+                    li {
+                        color: var(--black);
+                    }
+                }
+            }
+            #align {
+                .calendar {
+                    .esquerda, .direita {
+                        #left-black, #right-black {
+                            display: none;
+                        }
+                        #left-white, #right-white {
+                            display: flex;
+                        }
+                    }
+                }
             }
         }
     }

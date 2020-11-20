@@ -19,7 +19,7 @@
             padding: 0;
             li {
                 margin-left: 15px;
-                border: 1px var(--gray-6) solid;
+                border: 1px var(--black) solid;
                 border-radius: 50%;
                 width: 20px;
                 height: 20px;
@@ -134,6 +134,12 @@
                 flex-direction: row;
                 display: inline;
                 width: 50px;
+                #left-black, #right-black {
+                    display: flex;
+                }
+                #left-white, #right-white {
+                    display: none;
+                }
             }
             .esquerda {
                 margin-right: 100px;
