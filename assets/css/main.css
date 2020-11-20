@@ -644,7 +644,7 @@ body button a {
   }
 
   #footer-history {
-    margin-top: -70px;
+    margin-top: 55px;
   }
 
   #footer-contact {
@@ -1343,7 +1343,7 @@ body button a {
     font-size: 30px;
   }
   #history .comentários .comentário-1 .coment small, #history .comentários .comentário-2 .coment small {
-    top: 110px;
+    top: 60px;
     font-size: 25px;
   }
 }
@@ -1392,7 +1392,7 @@ body button a {
   }
   #history .comentários .comentário-1 .coment small, #history .comentários .comentário-2 .coment small {
     font-size: 30px;
-    top: 150px;
+    top: 110px;
   }
 }
 #contact, #contact-login, #contact-password, #contact-register {
@@ -2023,7 +2023,7 @@ body button a {
   top: -50px;
 }
 #conta #contact-login h1, #conta #contact-password h1, #conta #contact-register h1 {
-  top: -310px;
+  top: -130px;
   font-size: 30px;
   color: var(--black);
   font-weight: bold;
@@ -2113,6 +2113,9 @@ body button a {
   }
 }
 @media (min-width: 768px) {
+  #conta #contact-login h1, #conta #contact-password h1, #conta #contact-register h1 {
+    top: -230px;
+  }
   #conta #contact-login .campo .field label, #conta #contact-login .campo .field-1 label, #conta #contact-password .campo .field label, #conta #contact-password .campo .field-1 label, #conta #contact-register .campo .field label, #conta #contact-register .campo .field-1 label {
     left: -90px;
     align-self: flex-start;
@@ -2146,6 +2149,9 @@ body button a {
   #conta {
     align-self: center;
   }
+  #conta #contact-login h1, #conta #contact-password h1, #conta #contact-register h1 {
+    top: -300px;
+  }
   #conta #contact-login .campo .field label, #conta #contact-login .campo .field-1 label, #conta #contact-password .campo .field label, #conta #contact-password .campo .field-1 label, #conta #contact-register .campo .field label, #conta #contact-register .campo .field-1 label {
     left: -50px;
     align-self: flex-start;
@@ -2175,6 +2181,10 @@ body button a {
 @media (min-width: 1920px) {
   #conta {
     align-self: center;
+  }
+  #conta #contact-login h1, #conta #contact-password h1, #conta #contact-register h1 {
+    font-size: 45px;
+    top: -400px;
   }
   #conta #contact-login .campo .field label, #conta #contact-login .campo .field-1 label, #conta #contact-password .campo .field label, #conta #contact-password .campo .field-1 label, #conta #contact-register .campo .field label, #conta #contact-register .campo .field-1 label {
     left: -100px;

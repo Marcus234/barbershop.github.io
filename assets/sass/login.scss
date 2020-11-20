@@ -10,7 +10,7 @@
         position: relative;
         top: -50px;
         h1 {
-            top: -310px;
+            top: -130px;
             font-size: 30px;
             color: var(--black);
             font-weight: bold;
@@ -115,6 +115,9 @@
 @media (min-width: 768px) {
     #conta {
         #contact-login, #contact-password, #contact-register {
+            h1 {
+                top: -230px;
+            }
             .campo {
                 .field, .field-1 {
                     label {
@@ -156,6 +159,9 @@
     #conta {
         align-self: center;
         #contact-login, #contact-password, #contact-register {
+            h1 {
+                top: -300px;
+            }
             .campo {
                 .field, .field-1 {
                     label {
@@ -194,6 +200,10 @@
     #conta {
         align-self: center;
         #contact-login, #contact-password, #contact-register {
+            h1 {
+                font-size: 45px;
+                top: -400px;
+            }
             .campo {
                 .field, .field-1 {
                     label {
