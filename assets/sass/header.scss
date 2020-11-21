@@ -107,9 +107,14 @@
                     align-self: flex-end;
                     flex-direction: column;
                     margin-right: 25px;
-                    img {
+                    #sair, #sair-white {
                         width: 39px;
                         height: 39px;
+                    }
+                    #sair-white {
+                        display: none;
+                        width: 39px;
+                        height: 29px;
                     }
                     p {
                         font-size: 20px;
@@ -263,7 +268,7 @@
                     }
                     .deslogar {
                         margin-top: -20px;
-                        img {
+                        #sair, #sair-white {
                             width: 49px;
                             height: 49px;
                         }

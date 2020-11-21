@@ -110,6 +110,20 @@ body {
         }
         #header {
             background-color: var(--white-1);
+            #menu {
+                &.logged {
+                    nav {
+                        .deslogar {
+                            #sair {
+                                display: none;
+                            }
+                            #sair-white {
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+            }
         }
         #error {
             #erro-black {

@@ -108,6 +108,12 @@ body button a {
   body #header {
     background-color: var(--white-1);
   }
+  body #header #menu.logged nav .deslogar #sair {
+    display: none;
+  }
+  body #header #menu.logged nav .deslogar #sair-white {
+    display: flex;
+  }
   body #error #erro-black {
     display: none;
   }
@@ -236,9 +242,14 @@ body button a {
   flex-direction: column;
   margin-right: 25px;
 }
-#header #menu.logged nav .deslogar img {
+#header #menu.logged nav .deslogar #sair, #header #menu.logged nav .deslogar #sair-white {
   width: 39px;
   height: 39px;
+}
+#header #menu.logged nav .deslogar #sair-white {
+  display: none;
+  width: 39px;
+  height: 29px;
 }
 #header #menu.logged nav .deslogar p {
   font-size: 20px;
@@ -359,7 +370,7 @@ body button a {
   #header #menu.logged nav .deslogar {
     margin-top: -20px;
   }
-  #header #menu.logged nav .deslogar img {
+  #header #menu.logged nav .deslogar #sair, #header #menu.logged nav .deslogar #sair-white {
     width: 49px;
     height: 49px;
   }
